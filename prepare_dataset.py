@@ -24,14 +24,17 @@ def process(dataset, max_timespan=60*60*1000):
             groups.append((p1, p2))
         last = p1 = last+1
         
+    messages_list = set()
     conversations = []
     for group in groups:
-        conversation = []
+        conversations.append(list(range(group[0], group[1])))
         for id in range(group[0], group[1]):
-            conversation.append(messages[id])
-        conversations.append(conversation)
+            messages_list.add(id)
             
-    return conversations
+    return {
+        "conversations": conversations,
+        "messages": [messages[id] for id in messages_list],
+    }
         
 def load_facebook_dataset(dir_path='messages/'):
     '''
