@@ -62,7 +62,7 @@ class NGrams():
         return self.ngrams
     
     def _export_ngrams(self, out_file, n=1):
-        ngrams = spell_checker.generate_ngrams(n)
+        ngrams = self.generate_ngrams(n)
         with open(out_file, 'w') as fo:
             json.dump(ngrams, fo)
         return ngrams
