@@ -17,18 +17,6 @@ class NGrams():
             self.ngrams = json.load(fi)
             self.n = n
     
-    def import_mapping(self, inp_file):
-        with open(inp_file) as fi:
-            self.mapping = json.load(fi)
-            
-    def _map(self, ngram):
-        power = 1
-        res = 0
-        for i, x in enumerate(reversed(ngram.split())):
-            res += power + self.mapping[x]
-            power *= len(self.mapping)
-        return res
-    
     def _generate_ngrams(self, corpus_file, n=1):
         '''
         Generate n-grams language model for a corpus.
