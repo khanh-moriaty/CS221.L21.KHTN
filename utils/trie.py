@@ -41,9 +41,9 @@ class Trie:
         q.append((self.root, t.root))
         while len(q) > 0:
             u = q.popleft()
-            if 'count' not in u[0]:
-                u[0]['count'] = 0
             if 'count' in u[1]:
+                if 'count' not in u[0]:
+                    u[0]['count'] = 0
                 u[0]['count'] += u[1]['count']
             for v in u[1]:
                 if v == 'count': continue

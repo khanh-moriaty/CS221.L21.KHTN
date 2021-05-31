@@ -4,11 +4,8 @@ import re
 import os
 import json
 import itertools
-from collections import Counter
+from utils.trie import Trie
 from multiprocessing import Pool
-
-import sys
-sys.setrecursionlimit(1000000)
 
 class NGrams():
 
@@ -28,10 +25,10 @@ class NGrams():
             - corpus_file: path to a corpus file.
             - n: number of consective words to be recorded by n-grams.
             
-        Returns: Counter object representing the n-grams language model.
+        Returns: Trie object representing the n-grams language model.
         '''
         
-        ngrams = Counter()
+        ngrams = Trie()
         
         with open(corpus_file, encoding='utf-8') as corpus:
             for i, sentence in enumerate(corpus):
@@ -46,7 +43,7 @@ class NGrams():
                 sentence = sentence.split()
                 for i in range(len(sentence)-n+1):
                     ngram = ' '.join(sentence[i:i+n])
-                    ngrams[ngram] += 1
+                    ngrams.add(ngram)
         
         return ngrams
 
@@ -59,29 +56,28 @@ class NGrams():
             - n: number of consective words to be recorded by n-grams.
             - subprocess: number of processes to be used by this function.
             
-        Returns: Counter object representing the n-grams language model for all corpus files.
+        Returns: Trie object representing the n-grams language model for all corpus files.
         '''
         
         with Pool(subprocess) as pool:
             ngrams = pool.starmap(self._generate_ngrams, zip(self.corpus_dir, itertools.repeat(n)))
-        self.ngrams = Counter()
+        print('Done processing. Begin merging.')
+        self.ngrams = Trie()
         self.n = n
         for ngram in ngrams:
-            self.ngrams += ngram
+            self.ngrams.merge(ngram)
         return self.ngrams
     
     def _export_ngrams(self, out_file, n=1):
-        ngrams = self.generate_ngrams(n)
-        with open(out_file, 'w') as fo:
-            json.dump(ngrams, fo)
+        self.generate_ngrams(n)._export(out_file)
     
-    def export_unigrams(self, out_file='/dataset/unigrams.json'):
+    def export_unigrams(self, out_file='/dataset/unigrams_trie.json'):
         self._export_ngrams(out_file, n=1)
     
-    def export_bigrams(self, out_file='/dataset/bigrams.json'):
+    def export_bigrams(self, out_file='/dataset/bigrams_trie.json'):
         self._export_ngrams(out_file, n=2)
     
-    def export_trigrams(self, out_file='/dataset/trigrams.json'):
+    def export_trigrams(self, out_file='/dataset/trigrams_trie.json'):
         self._export_ngrams(out_file, n=3)
     
 if __name__ == '__main__':
