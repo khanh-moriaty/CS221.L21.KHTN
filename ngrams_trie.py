@@ -13,9 +13,8 @@ class NGrams():
         self.corpus_dir = [os.path.join(corpus_dir, x) for x in os.listdir(corpus_dir)]
     
     def import_ngrams(self, inp_file, n=1):
-        with open(inp_file) as fi:
-            self.ngrams = json.load(fi)
-            self.n = n
+        self.ngrams = Trie()._import(inp_file)
+        self.n = n
     
     def _generate_ngrams(self, corpus_file, n=1):
         '''
