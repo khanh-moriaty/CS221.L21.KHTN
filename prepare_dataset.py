@@ -29,7 +29,7 @@ def process(dataset, max_timespan=60*60*1000):
     for i, group in enumerate(groups):
         conversations.append({
             'id': i,
-            'conversation': list(range(group[0], group[1]))),
+            'conversation': list(range(group[0], group[1])),
         })
         for id in range(group[0], group[1]):
             messages_list.add(id)
