@@ -12,6 +12,23 @@ class NGrams():
     def __init__(self, corpus_dir):
         self.corpus_dir = [os.path.join(corpus_dir, x) for x in os.listdir(corpus_dir)]
     
+    def import_ngrams(self, inp_file, n=1):
+        with open(inp_file) as fi:
+            self.ngrams = json.load(fi)
+            self.n = n
+    
+    def import_mapping(self, inp_file):
+        with open(inp_file) as fi:
+            self.mapping = json.load(fi)
+            
+    def _map(self, ngram):
+        power = 1
+        res = 0
+        for i, x in enumerate(reversed(ngram.split())):
+            res += power + self.mapping[x]
+            power *= len(self.mapping)
+        return res
+    
     def _generate_ngrams(self, corpus_file, n=1):
         '''
         Generate n-grams language model for a corpus.
@@ -57,6 +74,7 @@ class NGrams():
         with Pool(subprocess) as pool:
             ngrams = pool.starmap(self._generate_ngrams, zip(self.corpus_dir, itertools.repeat(n)))
         self.ngrams = Counter()
+        self.n = n
         for ngram in ngrams:
             self.ngrams += ngram
         return self.ngrams
@@ -65,16 +83,15 @@ class NGrams():
         ngrams = self.generate_ngrams(n)
         with open(out_file, 'w') as fo:
             json.dump(ngrams, fo)
-        return ngrams
     
     def export_unigrams(self, out_file='/dataset/unigrams.json'):
-        return self._export_ngrams(out_file, n=1)
+        self._export_ngrams(out_file, n=1)
     
     def export_bigrams(self, out_file='/dataset/bigrams.json'):
-        return self._export_ngrams(out_file, n=2)
+        self._export_ngrams(out_file, n=2)
     
     def export_trigrams(self, out_file='/dataset/trigrams.json'):
-        return self._export_ngrams(out_file, n=3)
+        self._export_ngrams(out_file, n=3)
     
 if __name__ == '__main__':
     ngrams = NGrams('/dataset/corpus-news')
