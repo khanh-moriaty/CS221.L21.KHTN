@@ -3,7 +3,8 @@ messages/
 conversations.json
 
 # database
-postgres/data/
+# postgresql/data/
+# !postgresql/data/README.md
 
 
 

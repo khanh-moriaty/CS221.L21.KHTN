@@ -1,11 +1,12 @@
 from flask import Flask, request
 import requests
+import os
 
 app = Flask(__name__)
 
 FB_API_URL = 'https://graph.facebook.com/v11.0/me/messages'
-VERIFY_TOKEN = 'CS221.L21.KHTN' # <paste your verify token here>
-PAGE_ACCESS_TOKEN = 'EAAHBivC8ZAvIBANZCGuW1p7VqXblQNLqUT7IFk0vOYZBRDG5ChXANekhqAZCzZCvswVlrY6zY0223VftAobDmlTwBRkeZANP8jKZBvlM8aSdV8z4ZCQmz7XT8FmFiz3KMlboQBJxNlPkJMGmDhZBpRXoeLyqnHPfnQTicxnyexKi8ZCB0f2Y8JwMg3' # paste your page access token here>"
+VERIFY_TOKEN = os.environ['WEBHOOK_PASSWORD']
+PAGE_ACCESS_TOKEN = os.environ['WEBHOOK_PAGE_TOKEN']
 
 def send_message(recipient_id, text):
     """Send a response to Facebook"""
@@ -57,7 +58,7 @@ def is_user_message(message):
             not message['message'].get("is_echo"))
 
 
-@app.route("/webhook", methods=["GET", "POST"])
+@app.route("/", methods=["GET", "POST"])
 def listen():
     """This is the main function flask uses to 
     listen at the `/webhook` endpoint"""
