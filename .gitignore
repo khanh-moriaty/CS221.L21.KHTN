@@ -3,7 +3,7 @@ messages/
 conversations.json
 
 # database
-# postgresql/data
+postgresql/data
 
 #############
 # TEMPLATES #
