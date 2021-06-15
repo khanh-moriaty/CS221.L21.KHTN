@@ -44,6 +44,21 @@ Benny Goodman
 Peggy Lee
 Imagine Dragons
 Linkin Park
+JayKii
+Trịnh Thăng Bình
+Hoài Lâm
+Sara
+Thanh Hưng
+Hoàng Duyên
+JSOL
+Hứa Kim Tuyền
+Duy Mạnh
+Anh Tú
+Erik
+Lê Hiếu
+Long Phạm
+Sơn Tùng MTP
+Bùi Anh Tuấn
 Ngô Kiến Huy
 Thangzet
 Lee Yang
@@ -74,7 +89,6 @@ Wxrdie
 Hoàng Hải Dương
 Lệ Thủy
 Thanh Nga (NSƯT)
-Hoài Lâm
 Ricky Star
 RTee
 Only T
@@ -92,7 +106,6 @@ Isan
 Quang Lê
 Bảo Thy
 Tuấn Hưng
-Bùi Anh Tuấn
 Rhymastic
 Bức Tường
 DsK
@@ -171,7 +184,6 @@ Bảo Kun
 Rapper Mạnh Cường
 ERIK (MONSTAR ST.319)
 Đông Nhi
-JayKii
 Ahn
 Dật Hanh
 K-ICM
@@ -180,7 +192,6 @@ Kiun Gia Tuấn
 Tâm Đoan
 V.A
 Trương Cát Ân
-Trịnh Thăng Bình
 Minh Vương M4U
 Ưng Đại Vệ
 Saka Trương Tuyền
@@ -248,7 +259,6 @@ Tofu
 Xesi
 NamLee
 VoVanDuc
-Long Phạm
 Lâm Chấn Huy
 Nguyễn Hồng Nhung
 Lâm Nhật Tiến
@@ -276,7 +286,6 @@ Nam Cường
 Khả Linh
 Đinh Uyên
 Avin Lu
-Thanh Hưng
 Đoàn Tuấn
 Thanh Hà
 Yang
@@ -460,7 +469,6 @@ Kha Sỉn
 Ly Ly
 Hương Tràm
 Si.M
-Lê Hiếu
 Keyo
 Quang Dũng
 Ân Thiên Vỹ
@@ -926,7 +934,6 @@ DJ Melo
 Nguyễn Văn Chung
 Nguyên Võ
 Tuấn Cry
-Anh Tú
 Khả Ngân
 Hiền Mai
 Như Hana
@@ -1565,7 +1572,6 @@ Killic
 Dương Minh
 Đạt Huy
 Nam Anh
-Duy Mạnh
 Võ Đăng Khoa
 Khánh Vũ KVD
 Đặng Tuấn Vũ
@@ -1804,7 +1810,6 @@ Fanny Trần
 Nguyễn Đình Long
 Châu Ngọc Linh
 Châu Ngọc Tiên
-Hứa Kim Tuyền
 Da Fame
 LeNham
 Ngọc Huy
@@ -1842,7 +1847,6 @@ yeuquaimohihi
 The Voi Biển Band
 Dương Hiếu Nghĩa
 Khánh Minh
-JSOL
 Hoàng Bách
 NIOEH
 Quỳnh Hiểu Băng
