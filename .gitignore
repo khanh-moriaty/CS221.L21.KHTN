@@ -5,6 +5,9 @@ conversations.json
 # database
 postgresql/data
 
+# sensitive configs
+config/.env
+
 #############
 # TEMPLATES #
 #############
