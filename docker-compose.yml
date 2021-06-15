@@ -7,23 +7,20 @@ services:
     env_file: ./config/.env
 
   nginx:
-    image: nginx:latest
-    restart: always
+    image: nginx:latest    
     volumes:
       - ./config/nginx.conf:/etc/nginx/nginx.conf
 
   webhook:
     build: ./webhook
-    restart: always
     env_file: ./config/.env
 
   backend:
-    build: ./src
-    restart: always
+    build: ./src/
+    env_file: ./config/.env
 
   db:
     image: postgres:latest
-    restart: always
     volumes:
-      - ./database/data:/var/lib/postgresql/data
+      - ./postgresql/data:/var/lib/postgresql/data:z
     env_file: ./config/.env
