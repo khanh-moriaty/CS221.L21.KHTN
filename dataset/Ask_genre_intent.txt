@@ -1,0 +1,62 @@
+Cho tui bài [GENRE] đi.
+Có bài [GENRE] nào hay hay không?
+Bạn ơi cho mình vài bài [GENRE] đi.
+Bot ơi gợi ý nhạc [GENRE] cho mình đi.
+Bot ơi xin bài [GENRE].
+ê bot cho bài [GENRE] hay coi.
+cho t bài [GENRE] nghe coi.
+Bài [GENRE] nào hay z.
+xin bài [GENRE] nghe coi.
+Cho tui bài [GENRE] đỉnh cao đi.
+Cho mình hỏi có bài [GENRE] nào hay ko?
+ê chỉ t bài thể loại [GENRE] hợp lý coi.
+thể loại [GENRE] có bài nào hay m.
+thể loại [GENRE] có bài nào nghe hay ko bot.
+ví dụ vài bài [GENRE] nghe đi iem.
+cho bố mày ví dụ bài [GENRE] đi m.
+một số bài về [GENRE].
+một bài [GENRE].
+bài [GENRE] đi bot.
+này, cho tui bài [GENRE] với.
+examples về nhạc [GENRE].
+một số bài hát thú vị về [GENRE].
+một số bài hát thú vị thuộc thể loại [GENRE].
+dí dụ vài bài [GENRE].
+dí dụ vài bài [GENRE] thú dị đi bot ui.
+bot ơi cho tui mấy bài [GENRE] nghe coi
+give me an example song of [GENRE]
+cho toi mot bai [GENRE]
+e hay cho toi vai bai [GENRE] di
+chỉ t mấy bài về [GENRE] đi bot
+hmmm, cho mình 1 bài [GENRE] đi bot
+bạn ei, cho mình nghe 1 bài [GENRE] đi bạn
+hãy cho em một số bài hát hay hay thuộc thể loại [GENRE] đi ạ
+sư phụ, cho đệ tử xin một số bài hát [GENRE] đi sư phụ
+onii chan, cho e bài [GENRE] đi onii
+mày ơi, cho tao vài bài [GENRE] nghe với coi
+dcm cho t bài [GENRE] nghe coi
+đưa cho t danh sách các bài [GENRE] coi
+[GENRE] có bài nào hay
+hãy cho tui một bài hát siu hay thuộc thể loại [GENRE] xem nào
+này, đưa 1 bài [GENRE] xem nào
+eg về [GENRE].
+nè bot, cho bài [GENRE] nghe
+Sủa vài bài [GENRE] nghe coi
+bạn ơi mở cho mình bài [GENRE] nghe với
+cho tôi biết một số bài [GENRE] nổi tiếng
+nói t nghe 1 bài [GENRE] nào
+Chỉ t vài bài [GENRE] nào
+1 bài [GENRE] đi nào
+Cho mình tên bài hát thể loại [GENRE]
+tên 1 bài thuộc thể loại [GENRE]
+1 bài [GENRE]
+mot bai [GENRE]
+chi t mot bai [GENRE]
+the loai [GENRE] co bai nao hay z bot
+mot so bai thuoc the loai [GENRE] di bot ngu
+danh sach cac bai hat the loai [GENRE]
+cho minh nghe bai [GENRE] hay hay di
+mo minh 1 bai [GENRE] di nao
+di du 1 bai [GENRE] di a
+cho minh xin may bai [GENRE] voi a
+alo dua t may bai [GENRE] d
