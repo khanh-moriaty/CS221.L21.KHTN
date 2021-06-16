@@ -1,0 +1,184 @@
+Cho tui bài [GENRE] đi.
+Có bài [GENRE] nào hay hay không?
+Bạn ơi cho mình vài bài [GENRE] đi.
+Bot ơi gợi ý nhạc [GENRE] cho mình đi.
+Bot ơi xin bài [GENRE].
+ê bot cho bài [GENRE] hay coi.
+cho t bài [GENRE] nghe coi.
+Bài [GENRE] nào hay z.
+xin bài [GENRE] nghe coi.
+Cho tui bài [GENRE] đỉnh cao đi.
+Cho mình hỏi có bài [GENRE] nào hay ko?
+ê chỉ t bài thể loại [GENRE] hợp lý coi.
+thể loại [GENRE] có bài nào hay m.
+thể loại [GENRE] có bài nào nghe hay ko bot.
+ví dụ vài bài [GENRE] nghe đi iem.
+cho bố mày ví dụ bài [GENRE] đi m.
+một số bài về [GENRE].
+một bài [GENRE].
+bài [GENRE] đi bot.
+này, cho tui bài [GENRE] với.
+examples về nhạc [GENRE].
+một số bài hát thú vị về [GENRE].
+một số bài hát thú vị thuộc thể loại [GENRE].
+dí dụ vài bài [GENRE].
+dí dụ vài bài [GENRE] thú dị đi bot ui.
+bot ơi cho tui mấy bài [GENRE] nghe coi
+give me an example song of [GENRE]
+cho toi mot bai [GENRE]
+e hay cho toi vai bai [GENRE] di
+chỉ t mấy bài về [GENRE] đi bot
+hmmm, cho mình 1 bài [GENRE] đi bot
+bạn ei, cho mình nghe 1 bài [GENRE] đi bạn
+hãy cho em một số bài hát hay hay thuộc thể loại [GENRE] đi ạ
+sư phụ, cho đệ tử xin một số bài hát [GENRE] đi sư phụ
+onii chan, cho e bài [GENRE] đi onii
+mày ơi, cho tao vài bài [GENRE] nghe với coi
+dcm cho t bài [GENRE] nghe coi
+đưa cho t danh sách các bài [GENRE] coi
+[GENRE] có bài nào hay
+hãy cho tui một bài hát siu hay thuộc thể loại [GENRE] xem nào
+này, đưa 1 bài [GENRE] xem nào
+eg về [GENRE].
+nè bot, cho bài [GENRE] nghe
+Sủa vài bài [GENRE] nghe coi
+bạn ơi mở cho mình bài [GENRE] nghe với
+cho tôi biết một số bài [GENRE] nổi tiếng
+nói t nghe 1 bài [GENRE] nào
+Chỉ t vài bài [GENRE] nào
+1 bài [GENRE] đi nào
+Cho mình tên bài hát thể loại [GENRE]
+tên 1 bài thuộc thể loại [GENRE]
+1 bài [GENRE]
+mot bai [GENRE]
+chi t mot bai [GENRE]
+the loai [GENRE] co bai nao hay z bot
+mot so bai thuoc the loai [GENRE] di bot ngu
+danh sach cac bai hat the loai [GENRE]
+cho minh nghe bai [GENRE] hay hay di
+mo minh 1 bai [GENRE] di nao
+di du 1 bai [GENRE] di a
+cho minh xin may bai [GENRE] voi a
+alo dua t may bai [GENRE] d
+Cho tui bài của [ARTIST] đi.
+Có bài nào của [ARTIST] hay hay không?
+Bạn ơi cho mình vài bài của [ARTIST] đi.
+Bot ơi gợi ý nhạc [ARTIST] cho mình đi.
+Bot ơi xin bài của [ARTIST].
+ê bot cho bài của [ARTIST] hay coi.
+cho t bài của [ARTIST] nghe coi.
+Bài của [ARTIST] có bài nào hay z.
+xin bài của [ARTIST] nghe coi.
+Cho tui bài hát của [ARTIST] đỉnh cao đi.
+Cho mình hỏi có bài nào của [ARTIST] hay ko?
+ê chỉ t bài hát nào của [ARTIST] hợp lý coi.
+[ARTIST] có bài nào hay m.
+[ARTIST] có bài nào nghe hay ko bot.
+ví dụ vài bài của [ARTIST] nghe đi iem.
+cho bố mày ví dụ vài bài của [ARTIST] đi m.
+một số bài của [ARTIST].
+một bài hát của [ARTIST].
+[ARTIST] đi bot.
+này, cho tui bài của [ARTIST] với.
+examples về nhạc of [ARTIST].
+một số bài hát thú vị của [ARTIST].
+một số bài hát thú vị của [ARTIST].
+dí dụ vài bài của [ARTIST]
+dí dụ vài bài của [ARTIST] thú dị đi bot ui.
+bot ơi cho tui mấy bài của [ARTIST] nghe coi
+give me an example song of [ARTIST]
+cho toi mot bai cua [ARTIST]
+e hay cho toi vai bai cua [ARTIST] di
+chỉ t mấy bài của [ARTIST] đi bot
+hmmm, cho mình 1 bài của ca sĩ [ARTIST] đi bot
+bạn ei, cho mình nghe 1 bài của [ARTIST] đi bạn
+hãy cho em một số bài hát hay hay của [ARTIST] đi ạ
+sư phụ, cho đệ tử xin một số bài hát do [ARTIST] trình bày đi sư phụ
+onii chan, cho e bài hát do [ARTIST] hát đi onii
+mày ơi, cho tao vài bài do [ARTIST] biểu diễn nghe với coi
+dcm cho t mấy bài của [ARTIST] nghe coi
+đưa cho t danh sách các bài các bài hát của [ARTIST] coi
+[ARTIST] có bài nào hay
+hãy cho tui một bài hát siu hay của ca sĩ [ARTIST] xem nào
+này, đưa 1 bài của ca sĩ xem nào
+nhóm [ARTIST] có bài nào nghe ổn ko
+nè bot, cho bài của [ARTIST] nghe
+sủa vài bài của [ARTIST]
+tên 1 bài hát của [ARTIST]
+danh sách các bài hát của [ARTIST]
+[ARTIST] hát những bài nào
+ê ê cho t bài của [ARTIST] đi
+hãy ví dụ một bài của [ARTIST]
+hãy ví dụ một số bài hát của [ARTIST] đi
+liệt kê các bài hát của [ARTIST] cho t xem
+gợi ý t một số bài hát của [ARTIST]
+gợi ý t 1 bài hát hay của [ARTIST]
+dm cho bố m 1 bài của [ARTIST]
+danh sach cac bai hat cua [ARTIST]
+cho minh nghe bai cua [ARTIST] hay hay di
+mo minh 1 bai cua [ARTIST] di nao
+di du 1 bai cua [ARTIST] di a
+cho minh xin may bai cua [ARTIST] voi a
+alo dua t may bai cua [ARTIST] d
+Cho tui bài nào [MOOD] đi.
+Có bài [MOOD] nào hay hay không?
+Bạn ơi cho mình vài bài [MOOD] đi.
+Bot ơi gợi ý nhạc [MOOD] cho mình đi.
+Bot ơi xin bài [MOOD].
+ê bot cho bài [MOOD] hay coi.
+cho t bài [MOOD] nghe coi.
+Bài [MOOD] nào hay z.
+Bài nào [MOOD] hay z
+xin bài [MOOD] nghe coi.
+Cho tui bài [MOOD] nào đỉnh cao đi.
+Cho mình hỏi có bài [MOOD] nào hay ko?
+ê chỉ t bài [MOOD] hợp lý coi.
+tâm trạng [MOOD] có bài nào hay m.
+tâm trạng [MOOD] có bài nào nghe hay ko bot.
+ví dụ vài bài[MOOD] nghe đi iem.
+cho bố mày ví dụ bài [MOOD] đi m.
+một số bài hát [MOOD].
+một bài hát [MOOD].
+bài [MOOD] đi bot.
+này, cho tui bài nào [MOOD] với.
+examples về nhạc [MOOD].
+một số bài nhạc [MOOD].
+dí dụ vài bài [MOOD].
+dí dụ vài bài [MOOD] thú dị đi bot ui.
+bot ơi cho tui mấy bài [MOOD] nghe coi
+give me an example [GENRE] song 
+cho toi mot bai [MOOD]
+e hay cho toi vai bai [MOOD] di
+chỉ t mấy bài về [MOOD] đi bot
+hmmm, cho mình 1 bài [MOOD] đi bot
+bạn ei, cho mình nghe 1 bài [MOOD] đi bạn
+hãy cho em một số bài hát hay hay hợp với tâm trạng [GENRE] đi ạ
+sư phụ, cho đệ tử xin một số bài hát [MOOD] đi sư phụ
+onii chan, cho e bài [MOOD] đi onii
+mày ơi, cho tao vài bài [MOOD] nghe với coi
+dcm cho t bài [MOOD] nghe coi
+đưa cho t danh sách các bài [MOOD] coi
+[MOOD] có bài nào hay
+hãy cho tui một bài hát siu hay mà [MOOD] xem nào
+này, đưa 1 bài [MOOD] xem nào
+eg về [MOOD] song.
+nè bot, cho bài [MOOD] nghe
+Sủa vài bài [MOOD] nghe coi
+bạn ơi mở cho mình bài [MOOD] nghe với
+cho tôi biết một số bài [MOOD] nổi tiếng
+nói t nghe 1 bài [MOOD] nào
+Chỉ t vài bài [MOOD] nào
+1 bài [MOOD] đi nào
+Cho mình tên bài hát chủ đề [MOOD]
+tên 1 bài thuộc chủ đề [MOOD]
+1 bài [MOOD]
+mot bai [MOOD]
+chi t mot bai [MOOD]
+[MOOD] co bai nao hay z bot
+mot so bai [MOOD] di bot ngu
+danh sach cac bai hat [MOOD]
+cho minh nghe bai [MOOD] hay hay di
+mo minh 1 bai [MOOD] di nao
+di du 1 bai [MOOD] di a
+cho minh xin may bai [MOOD] voi a
+alo dua t may bai [MOOD] d
