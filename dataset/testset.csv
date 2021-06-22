@@ -6,7 +6,7 @@ sentence_idx,word,pos,tag
 1,của,E,O
 1,Sơn,Np,B-A
 1,Tùng,Np,I-A
-1,MTP,Np,O
+1,MTP,Np,I-A
 1,không,R,O
 1,mày,P,O
 1,?,CH,O
