@@ -1,7 +1,7 @@
 sentence_idx,word,pos,tag
 1,Có,V,O
 1,bài,N,O
-1,kpop,Np,B-
+1,kpop,Np,B-G
 1,gì,P,O
 1,vui,A,B-M
 1,của,E,O
