@@ -1,26 +1,16 @@
-FROM    ubuntu:latest
+FROM    python:3.6.13-slim-buster
 
 ARG     DEBIAN_FRONTEND=noninteractive
+
+ENV     LC_ALL=C.UTF-8
+ENV     LANG=C.UTF-8
+ENV     FLASK_APP=server.py FLASK_RUN_PORT=7777
+
+RUN     pip install flask
 
 COPY    ./ src/
 WORKDIR src/
 
-ENV     LC_ALL=C.UTF-8
-ENV     LANG=C.UTF-8
-ENV     FLASK_APP=server.py
 
-RUN     apt-get update; \
-        apt-get install -y build-essential; \
-        apt-get install -y software-properties-common; \
-        apt-get install -y curl; \
-        yes | add-apt-repository ppa:deadsnakes/ppa; \
-        apt-get update; \
-        apt-get install -y python3.6; \
-        apt-get install -y python3-distutils; \
-        apt-get install -y python3.6-dev; \
-        (curl https://bootstrap.pypa.io/get-pip.py | python3.6); \
-        python3.6 -m pip install flask;
-
-
-CMD     flask run -p 7777
+CMD     flask run -h 0.0.0.0
 
