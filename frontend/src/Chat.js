@@ -12,28 +12,23 @@ class Chat extends Component {
     };
   }
 
-//   componentDidMount() {
-//     console.log('Creds in chat: ',this.props.creds);
-//     // fetch current messages
-//     const url = config.baseUrl + config.api + config.messagesRoute;
-//     const reqData = {
-//       method: 'GET',
-//       headers: {
-//         'Content-type': 'application/json',
-//         'token': this.props.creds.token
-//       },
-//       mode: 'cors'
-//     }
+  componentDidMount() {
+    // fetch current messages
+    const url = config.baseUrl + config.api + config.messageRoute;
+    const reqData = {
+      method: 'GET',
+    }
 
-//     fetch(url, reqData)
-//       .then(res => res.json())
-//       .then(res => {
-//         if (!('error' in res)) {
-//           this.setState({messages: res})
-//         }
-//       })
-//       .catch(err => console.log(err));
-//   }
+    fetch(url, reqData)
+      .then(res => res.json())
+      .then(res => {
+        console.log(res);
+        this.setState(prevState => ({
+            messages: [...prevState.messages, ...res.messages]
+        }));
+      })
+      .catch(err => console.log(err));
+  }
 
   handleSubmit = e => {
     e.preventDefault();

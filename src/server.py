@@ -7,6 +7,20 @@ app = Flask(__name__)
 def frontend_message():
     receive_time = int(time.time() * 1000)
     
+    if request.method == "GET":
+        return {
+            'token': "test",
+            'messages': [
+                {
+                    'username': 'CHATBOT',
+                    'timestamp': receive_time,
+                    'message': "Xin chào! Mình là Chatbot thông minh vjp pro có chức năng gợi ý bài hát. \
+                        Bạn hãy nhập câu hỏi vào khung chat bên dưới để bắt đầu giao tiếp nhé!",
+                },
+            ],
+        }
+    
+    
     content = request.get_json()
     token = content['token']
     message = content['message']
