@@ -66,10 +66,14 @@ class Chat extends Component {
       .catch(err => console.log('Error: ', err));
   }
 
+  componentDidUpdate(prevProps) {
+    document.querySelector('.message-li:last-child').scrollIntoView();
+  }
+
   render () {
     return (
       <div>
-        <h2>Chat</h2>
+        <h2>Chatbot gợi ý nhạc</h2>
         <ul id="messages">
           {this.state.messages.map(msg =>
             <Message
@@ -80,8 +84,8 @@ class Chat extends Component {
           )}
         </ul>
         <form id="chat-message-form" onSubmit={e => e.preventDefault()} ref={this.form} >
-          <input id="message-input-field" type="text" placeholder="Spread the word." ref={input => this.message=input} />
-          <button id="send-message-btn" onClick={this.handleSubmit}>Send</button>
+          <input id="message-input-field" type="text" placeholder="Soạn câu hỏi cho mình ở đây nhé ^^" ref={input => this.message=input} />
+          <button id="send-message-btn" onClick={this.handleSubmit}>Gửi</button>
         </form>
       </div>
     );
