@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Music Recommendation Chatbot",
+  "name": "A Chatbot for Music Recommendation",
   "icons": [
     {
       "src": "favicon.ico",
