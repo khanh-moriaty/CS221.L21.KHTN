@@ -1,11 +1,14 @@
 FROM    node:16-buster-slim
 
-COPY    ./ src/
-WORKDIR src/
-
 ENV     LC_ALL=C.UTF-8
 ENV     LANG=C.UTF-8
 
-RUN     yarn install
+RUN     npm install -g serve
 
-CMD     yarn start
+COPY    ./ src/
+WORKDIR src/
+
+RUN     yarn install; \
+        yarn build;
+
+CMD     serve -s build -l 3000
