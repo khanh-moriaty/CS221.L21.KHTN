@@ -3,6 +3,12 @@ import time
 
 app = Flask(__name__)
 
+from nlu import NLU
+
+# Initialize NLU module
+nlu = NLU()
+nlu.load_model()
+
 @app.route("/frontend/message", methods=["GET", "POST"])
 def frontend_message():
     receive_time = int(time.time() * 1000)
@@ -25,6 +31,9 @@ def frontend_message():
     token = content['token']
     message = content['message']
     
+    # Process user input
+    response = nlu.get_response(context=[], sentence=message)
+    
     response_time = int(time.time() * 1000)
     return {
         'token': token,
@@ -37,7 +46,7 @@ def frontend_message():
             {
                 'username': 'CHATBOT',
                 'timestamp': response_time,
-                'message': 'You said "{}"'.format(message),
+                'message': response,
             },
         ],
     }
