@@ -24,13 +24,11 @@ một số bài nhạc [MOOD].
 dí dụ vài bài [MOOD].
 dí dụ vài bài [MOOD] thú dị đi bot ui.
 bot ơi cho tui mấy bài [MOOD] nghe coi
-give me an example [GENRE] song 
 cho toi mot bai [MOOD]
 e hay cho toi vai bai [MOOD] di
 chỉ t mấy bài về [MOOD] đi bot
 hmmm, cho mình 1 bài [MOOD] đi bot
 bạn ei, cho mình nghe 1 bài [MOOD] đi bạn
-hãy cho em một số bài hát hay hay hợp với tâm trạng [GENRE] đi ạ
 sư phụ, cho đệ tử xin một số bài hát [MOOD] đi sư phụ
 onii chan, cho e bài [MOOD] đi onii
 mày ơi, cho tao vài bài [MOOD] nghe với coi
