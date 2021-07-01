@@ -22,7 +22,7 @@ yarn-error.log*
 postgresql/data
 
 # sensitive configs
-config/.env
+config/dev.env
 
 #############
 # TEMPLATES #

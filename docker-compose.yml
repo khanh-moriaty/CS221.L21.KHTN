@@ -4,7 +4,9 @@ services:
 
     ngrok:
         image: wernight/ngrok:latest
-        env_file: ./config/.env
+        environment:
+            - NGROK_AUTH=${NGROK_AUTH}
+            - NGROK_PORT=${NGROK_PORT}
 
     nginx:
         image: nginx:latest        
@@ -15,11 +17,15 @@ services:
 
     webhook:
         build: ./webhook
-        env_file: ./config/.env
+        environment:
+            - WEBHOOK_PASSWORD=${WEBHOOK_PASSWORD}
+            - WEBHOOK_PAGE_TOKEN=${WEBHOOK_PAGE_TOKEN}
 
     frontend:
-        build: ./frontend
-        env_file: ./config/.env
+        build: 
+            context: ./frontend
+            args:
+                - FRONTEND_DOMAIN=${FRONTEND_DOMAIN}
 
     backend:
         build: ./src/
@@ -29,4 +35,7 @@ services:
         image: postgres:latest
         volumes:
             - ./postgresql/data:/var/lib/postgresql/data:z
-        env_file: ./config/.env
+        environment:
+            - POSTGRES_DB=${POSTGRES_DB}
+            - POSTGRES_USER=${POSTGRES_USER}
+            - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
