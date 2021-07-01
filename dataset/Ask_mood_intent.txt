@@ -13,7 +13,7 @@ Cho mình hỏi có bài [MOOD] nào hay ko?
 ê chỉ t bài [MOOD] hợp lý coi.
 tâm trạng [MOOD] có bài nào hay m.
 tâm trạng [MOOD] có bài nào nghe hay ko bot.
-ví dụ vài bài[MOOD] nghe đi iem.
+ví dụ vài bài [MOOD] nghe đi iem.
 cho bố mày ví dụ bài [MOOD] đi m.
 một số bài hát [MOOD].
 một bài hát [MOOD].
@@ -59,4 +59,4 @@ cho minh nghe bai [MOOD] hay hay di
 mo minh 1 bai [MOOD] di nao
 di du 1 bai [MOOD] di a
 cho minh xin may bai [MOOD] voi a
-alo dua t may bai [MOOD] d
+alo dua t may bai [MOOD] di

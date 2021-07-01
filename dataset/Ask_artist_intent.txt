@@ -57,4 +57,4 @@ cho minh nghe bai cua [ARTIST] hay hay di
 mo minh 1 bai cua [ARTIST] di nao
 di du 1 bai cua [ARTIST] di a
 cho minh xin may bai cua [ARTIST] voi a
-alo dua t may bai cua [ARTIST] d
+alo dua t may bai cua [ARTIST] di
