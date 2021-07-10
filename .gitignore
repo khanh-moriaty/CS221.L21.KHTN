@@ -166,3 +166,6 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+# trained word2vec
+wiki.vi.model.bin
