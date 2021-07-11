@@ -1,9 +1,5 @@
-import gensim
-from gensim.models import KeyedVectors
-import os
-import string
-import numpy as np
-import pickle
+
+
 bad_chars = [';', ':', '!', "*", "-",".",",","%","(",")","/","{","}","[","]"]
 class IntentClassifier:
     
@@ -21,14 +17,14 @@ class IntentClassifier:
         '''
         
         # Template: always return class 0.
-        vec = np.array(predict_1sen(sentence))
+        vec = np.array(self.predict_1sen(sentence))
         y_pred = self.model.predict([vec])
         return y_pred[0]
-    def load_w2v_model(self):
-        model = "wiki.vi.model.bin" #dowload here https://thiaisotajppub.s3-ap-northeast-1.amazonaws.com/publicfiles/wiki.vi.model.bin.gz
-        self.w2v_model = KeyedVectors.load_word2vec_format(model, binary=True)
+
     def load_intent_model(self):
-        self.model = pickle.load(open('/CS221.L21.KHTN/nlu/clf_model/final_model.sav','rb'))
+        w2vmodel = "src/nlu/wiki.vi.model.bin" #dowload here https://thiaisotajppub.s3-ap-northeast-1.amazonaws.com/publicfiles/wiki.vi.model.bin.gz
+        self.w2v_model = KeyedVectors.load_word2vec_format(w2vmodel, binary=True)
+        self.model = pickle.load(open('/CS221.L21.KHTN/src/nlu/model/clf_model/final_model.sav','rb'))
     def predict_1sen(self, sen):
         sentence = [word for word in sen.lower().split()]
         print('Sentences:', sentence)
@@ -44,3 +40,7 @@ class IntentClassifier:
         if n>0:
             vec = np.divide(vec, n)
         return vec
+
+# a = IntentClassifier()
+# a.load_intent_model()
+# print(a.predict_intent("xin chào","",""))
