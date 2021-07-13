@@ -38,7 +38,10 @@ class IntentClassifier:
                 n -= 1
                 continue
             try:
-                vec = self.w2v_model[word]
+                temp = self.w2v_model[word]
+                tong = sum(temp)
+                norm = [float(i)/tong for i in temp]
+                vec += norm 
             except:
                 n -= 1
         if n>0:
