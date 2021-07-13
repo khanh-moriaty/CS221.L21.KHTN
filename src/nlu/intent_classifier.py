@@ -1,6 +1,7 @@
 
 
 bad_chars = [';', ':', '!', "*", "-",".",",","%","(",")","/","{","}","[","]"]
+bad_words = ['nhé', 'nha', 'nhe', 'ha', 'nhen', 'he', 'hen']
 class IntentClassifier:
     
     def predict_intent(self, sentence, pos_tag, ner_tag):
@@ -33,6 +34,9 @@ class IntentClassifier:
         for word in sentence:
             for j in bad_chars:
                 word = word.replace(j, ' ')
+            if word in bad_words:
+                n -= 1
+                continue
             try:
                 vec = self.w2v_model[word]
             except:
