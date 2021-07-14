@@ -1,116 +1,75 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /*Custom css*/
 
 body {
-  background-color: #061F2F;
+    background-color: #fff;
+    touch-action: none;
 }
 
-h2, h3 {
-  color: rgb(176, 218, 255);
-  font-weight: lighter;
+/* .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+} */
+
+img {
+    pointer-events: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
-#messages {
-  background-color: #0b466c;
-  width: 66vw;
-  height: 66vh;
-  margin: 10px auto;
-  overflow-y: scroll;
-  padding: 10px;
-  border-radius: 3px;
-}
-.message-li {
-  list-style: none;
-  text-align: left;
-  margin: 0 0 10px 0;
-  border-radius: 20px;
-  padding: 10px;
-  background-color: #0b466c;
+/* Fix chat overflow after scrolling */
+div {
+    overflow-x: hidden !important;
 }
 
-.username, .timeStamp {
-  font-style: italic;
-  font-size: .6em;
+.chat-header {
+    border-top-left-radius: 2.5vh;
+    border-top-right-radius: 2.5vh;
 }
 
-.username {
-  color: rgb(118, 245, 180);
-  font-weight: bold;
-}
-
-.timeStamp {
-  color: rgb(248, 204, 233);
-  margin-bottom: 5px;
-}
-
-.message-text {
-  color: rgb(176, 218, 255);
-  font-style: italic;
-}
-
-#chat-message-form, #login-form {
-  width: 66vw;
-  margin: 10px auto;
-}
-
-#message-input-field {
-  width: 70%;
-  margin: 0 10px 0 0;
-  border-radius: 3px;
-  border: none;
-  height: 30px;
-  vertical-align:bottom;
-  padding: 0 0 0 10px;
-  background-color: rgb(117, 205, 149);
-  color: #0e0e0e;
-}
-
-#send-message-btn {
-  height: 30px;
-  border: none;
-  padding: 0;
-  width: 20%;
-  border-radius: 3px;
-  border: none;
-  background-color: rgb(196, 14, 49);
-  color: white;
-  font-weight: bolder;
+.chat-footer {
+    border-bottom-left-radius: 2.5vh;
+    border-bottom-right-radius: 2.5vh;
 }
