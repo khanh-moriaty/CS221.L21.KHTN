@@ -59,6 +59,11 @@ img {
     -ms-user-select: none;
 }
 
+/* Fix chat overflow after scrolling */
+div {
+    overflow-x: hidden !important;
+}
+
 .chat-header {
     border-top-left-radius: 2.5vh;
     border-top-right-radius: 2.5vh;

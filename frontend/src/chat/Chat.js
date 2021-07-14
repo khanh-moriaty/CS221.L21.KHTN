@@ -11,6 +11,7 @@ import Draggable from 'react-draggable';
 import { Scrollbars } from 'react-custom-scrollbars';
 
 import Message from './Message';
+import MessageLoading from './MessageLoading';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -43,7 +44,7 @@ const useStyles = makeStyles(theme => ({
     },
     chat: {
         boxShadow: '0 -2px 32px 0 rgba( 31, 38, 135, 0.25 )',
-        padding: "0.5vw 1vw 0.5vw 2.5vw",
+        padding: "8pt 20pt 8pt 24pt",
     },
     input: {
         flex: "1 1 auto",
@@ -55,6 +56,29 @@ export default function Chat() {
     const theme = useTheme();
 
     const classes = useStyles();
+
+    const messageRef = React.useRef();
+    const messagesEndRef = React.useRef();
+    const [isWaiting, setWaiting] = React.useState(false);
+    const [messageList, setMessageList] = React.useState([]);
+
+    const submitMessage = e => {
+        e.preventDefault();
+        if (isWaiting) return;
+        console.log(messageRef.current.getElementsByTagName("textarea")[0].value);
+        setWaiting(true);
+    }
+
+    const handleKeyDown = e => {
+        if (e.which === 13) {
+            messageRef.current.getElementsByTagName("textarea")[0].style.height = "auto"; //<------resize text area
+            submitMessage(e);
+        }
+    }
+
+    React.useEffect(() => {
+        messagesEndRef.current.scrollIntoView({behavior: 'smooth'});
+    }, [isWaiting])
 
     return (
         <Draggable bounds="parent" handle=".chat-header"
@@ -82,7 +106,7 @@ export default function Chat() {
                     <img src="logo_musicbot_1.png" className={classes.logo} draggable="false" />
                     <img src="logo_musicbot_2.png" className={classes.logo} draggable="false" />
                 </Box>
-                <Scrollbars autoHide>
+                <Scrollbars autoHide universal>
                     <Box
                         className={classes.chatHistory}
                     >
@@ -105,23 +129,29 @@ export default function Chat() {
                         Aliquam iaculis lectus dui, non fermentum dui pellentesque quis. Cras imperdiet viverra massa, sed molestie felis. 
                         Morbi vulputate, ex eu malesuada pulvinar, augue nibh eleifend turpis, id finibus purus nunc sed est. Suspendisse potenti. "></Message>
                         <Message user message="Donec posuere sapien vitae leo porttitor, vehicula eleifend ex imperdiet."></Message>
+                        {isWaiting ? <MessageLoading/> : null}
+                        <div ref={messagesEndRef}/>
                     </Box>
                 </Scrollbars>
-                <Box
-                    className={`${classes.chat} chat-footer`}
-                    display="flex"
-                    flexDirection="row"
-                >
-                    <InputBase
-                        className={classes.input}
-                        inputProps={{ style: { fontSize: 20 } }}
-                        placeholder="Your message here"
-                        multiline
-                    />
-                    <IconButton color="secondary" className={classes.iconButton}>
-                        <SendIcon fontSize="large" />
-                    </IconButton>
-                </Box>
+                <form onSubmit={submitMessage}>
+                    <Box
+                        className={`${classes.chat} chat-footer`}
+                        display="flex"
+                        flexDirection="row"
+                    >
+                        <InputBase
+                            ref={messageRef}
+                            className={classes.input}
+                            inputProps={{ style: { fontSize: 20 } }}
+                            onKeyDown={handleKeyDown}
+                            placeholder="Nhập tin nhắn..."
+                            multiline
+                        />
+                        <IconButton color="secondary" type="submit" className={classes.iconButton}>
+                            <SendIcon fontSize="large" />
+                        </IconButton>
+                    </Box>
+                </form>
             </Box>
         </Draggable>
     )

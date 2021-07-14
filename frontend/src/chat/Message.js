@@ -5,11 +5,11 @@ import { Box, Typography } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
     root: {
-        margin: "0.8vw 1vw 0.8vw 1vw",
+        margin: "6pt 12pt 6pt 12pt",
     },
     messageUser: {
         background: '#ed6a5ad0',
-        borderRadius: '2vh',
+        borderRadius: '12pt',
         color: "#fff",
         maxWidth: '80%',
         padding: '1vh 2vh 1vh 2vh',
