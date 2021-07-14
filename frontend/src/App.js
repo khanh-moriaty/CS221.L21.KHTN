@@ -12,15 +12,15 @@ import Chat from './chat/Chat';
 const theme = responsiveFontSizes(createTheme({
     typography: {
         fontFamily: [
-            'Roboto',
+            'Baloo 2',
         ].join(','),
     },
     palette: {
         primary: {
-            main: '#5465FF',
+            main: '#ED6A5A',
         },
         secondary: {
-            main: '#F0C808',
+            main: '#000000',
         },
     }
 }));
