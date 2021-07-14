@@ -24,8 +24,6 @@ một số bài nhạc [MOOD].
 dí dụ vài bài [MOOD].
 dí dụ vài bài [MOOD] thú dị đi bot ui.
 bot ơi cho tui mấy bài [MOOD] nghe coi
-cho toi mot bai [MOOD]
-e hay cho toi vai bai [MOOD] di
 chỉ t mấy bài về [MOOD] đi bot
 hmmm, cho mình 1 bài [MOOD] đi bot
 bạn ei, cho mình nghe 1 bài [MOOD] đi bạn
@@ -48,13 +46,3 @@ Chỉ t vài bài [MOOD] nào
 Cho mình tên bài hát chủ đề [MOOD]
 tên 1 bài thuộc chủ đề [MOOD]
 1 bài [MOOD]
-mot bai [MOOD]
-chi t mot bai [MOOD]
-[MOOD] co bai nao hay z bot
-mot so bai [MOOD] di bot ngu
-danh sach cac bai hat [MOOD]
-cho minh nghe bai [MOOD] hay hay di
-mo minh 1 bai [MOOD] di nao
-di du 1 bai [MOOD] di a
-cho minh xin may bai [MOOD] voi a
-alo dua t may bai [MOOD] di
