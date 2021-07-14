@@ -1,6 +1,6 @@
 {
-  "short_name": "Music Recommendation Chatbot",
-  "name": "A Chatbot for Music Recommendation",
+  "short_name": "Music-Bot",
+  "name": "Music Recommendation Chatbot",
   "icons": [
     {
       "src": "favicon.ico",
