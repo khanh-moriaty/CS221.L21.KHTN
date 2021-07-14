@@ -12,7 +12,7 @@ import Chat from './chat/Chat';
 const theme = responsiveFontSizes(createTheme({
     typography: {
         fontFamily: [
-            'Baloo 2',
+            'Open Sans',
         ].join(','),
     },
     palette: {

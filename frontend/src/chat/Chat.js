@@ -30,6 +30,7 @@ const useStyles = makeStyles(theme => ({
         height: '8%',
         textAlign: 'left',
         padding: '1.5vw 0 1.5vw 2vw',
+        background: '#E8D7FF40',
         boxShadow: '0 2px 32px 0 rgba( 31, 38, 135, 0.25 )',
     },
     logo: {
@@ -56,8 +57,8 @@ export default function Chat() {
     const classes = useStyles();
 
     return (
-        <Draggable bounds="parent"
-            // defaultPosition={useMediaQuery(theme.breakpoints.down('sm')) ? { x: 0, y: 0 } : { x: 200, y: 80 }}
+        <Draggable bounds="parent" handle=".chat-header"
+        // defaultPosition={useMediaQuery(theme.breakpoints.down('sm')) ? { x: 0, y: 0 } : { x: 200, y: 80 }}
         >
             <Box
                 className={classes.root}
@@ -74,7 +75,7 @@ export default function Chat() {
                     </Grid>
                 </Grid> */}
                 <Box
-                    className={classes.header}
+                    className={`${classes.header} chat-header`}
                     display='flex'
                     flexDirection='row'
                 >
@@ -96,17 +97,24 @@ export default function Chat() {
                         <Message message="Morbi vel elit a sapien sagittis vestibulum porttitor at odio."></Message>
                         <Message message="Sed nec augue et ex pretium fermentum sed at massa."></Message>
                         <Message user message="Sed maximus magna et pellentesque euismod."></Message>
+                        <Message user message="Suspendisse iaculis tortor vitae ligula mattis, nec commodo ligula vestibulum. 
+                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum hendrerit, 
+                        nunc ac mattis convallis, nisi felis fermentum massa, et porta neque libero eget tellus. Morbi ultricies purus eu 
+                        libero laoreet vulputate. Etiam mollis tempus lectus vel sollicitudin. Nam venenatis ultrices metus, eu pharetra 
+                        ex vehicula at. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                        Aliquam iaculis lectus dui, non fermentum dui pellentesque quis. Cras imperdiet viverra massa, sed molestie felis. 
+                        Morbi vulputate, ex eu malesuada pulvinar, augue nibh eleifend turpis, id finibus purus nunc sed est. Suspendisse potenti. "></Message>
                         <Message user message="Donec posuere sapien vitae leo porttitor, vehicula eleifend ex imperdiet."></Message>
                     </Box>
                 </Scrollbars>
                 <Box
-                    className={classes.chat}
+                    className={`${classes.chat} chat-footer`}
                     display="flex"
                     flexDirection="row"
                 >
                     <InputBase
                         className={classes.input}
-                        inputProps={{style: {fontSize: 20}}}
+                        inputProps={{ style: { fontSize: 20 } }}
                         placeholder="Your message here"
                         multiline
                     />

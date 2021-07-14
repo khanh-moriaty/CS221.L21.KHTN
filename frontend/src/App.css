@@ -58,3 +58,13 @@ img {
     -webkit-user-select: none;
     -ms-user-select: none;
 }
+
+.chat-header {
+    border-top-left-radius: 2.5vh;
+    border-top-right-radius: 2.5vh;
+}
+
+.chat-footer {
+    border-bottom-left-radius: 2.5vh;
+    border-bottom-right-radius: 2.5vh;
+}

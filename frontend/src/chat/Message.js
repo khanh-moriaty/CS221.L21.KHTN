@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { makeStyles } from '@material-ui/core/styles';
-import {Box, Typography} from '@material-ui/core';
+import { Box, Typography } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -10,11 +10,15 @@ const useStyles = makeStyles(theme => ({
     messageUser: {
         background: '#ed6a5ad0',
         borderRadius: '2vh',
+        color: "#fff",
+        maxWidth: '80%',
         padding: '1vh 2vh 1vh 2vh',
     },
     messageBot: {
         background: '#E8D7FFd0',
         borderRadius: '2vh',
+        color: "#000",
+        maxWidth: '80%',
         padding: '1vh 2vh 1vh 2vh',
     }
 }));
@@ -30,9 +34,11 @@ function Message(props) {
             flexDirection="row"
             justifyContent={props.user ? "flex-end" : "flex-start"}
         >
-            <Typography 
-            className={props.user ? classes.messageUser : classes.messageBot}
-            style={props.user ? {color:"#fff"} : {color: "#000"}}>
+            <Typography
+                className={props.user ? classes.messageUser : classes.messageBot}
+                style={props.user ? { color: "#fff" } : { color: "#000" }}
+                align="left"
+            >
                 {props.message}
             </Typography>
         </Box>
