@@ -28,14 +28,15 @@ const useStyles = makeStyles(theme => ({
         border: '1px solid #E8D7FF32'
     },
     header: {
-        height: '8%',
+        height: '64pt',
         textAlign: 'left',
-        padding: '1.5vw 0 1.5vw 2vw',
+        padding: '1.5% 0 1.5% 2.5%',
         background: '#E8D7FF40',
         boxShadow: '0 2px 32px 0 rgba( 31, 38, 135, 0.25 )',
     },
     logo: {
         marginRight: '1vw',
+        height: '100%',
     },
     chatHistory: {
         overflowX: 'hidden',
@@ -51,6 +52,9 @@ const useStyles = makeStyles(theme => ({
     }
 }));
 
+// const url = 'https://aiclub.uit.edu.vn/music-chatbot/api/frontend/message';
+const url = document.location.href + '/api/frontend/message';
+
 export default function Chat() {
 
     const theme = useTheme();
@@ -61,23 +65,74 @@ export default function Chat() {
     const messagesEndRef = React.useRef();
     const [isWaiting, setWaiting] = React.useState(false);
     const [messageList, setMessageList] = React.useState([]);
+    const [token, setToken] = React.useState('');
+
+    const processResponse = res => {
+        console.log(res);
+        const tmp = [];
+        res.messages.forEach(element => {
+            if (element.username === 'CHATBOT')
+                tmp.push(element);
+        });
+        setMessageList([...messageList, ...tmp]);
+        setToken(res.token);
+        setWaiting(false);
+    }
+
+    // On mount: fetch welcome message
+    React.useEffect(() => {
+        setWaiting(true);
+        const reqData = {
+            method: 'GET',
+        }
+
+        fetch(url, reqData)
+            .then(res => res.json())
+            .then(processResponse)
+            .catch(err => console.log(err));
+    }, [])
+
+    // On user input
+    React.useEffect(() => {
+        if (messageList.length > 0 && messageList[messageList.length - 1].username !== 'CHATBOT') {
+            setWaiting(true);
+            const payload = {
+                token: token,
+                message: messageList[messageList.length - 1].message
+            };
+            const reqData = {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload),
+            };
+
+            fetch(url, reqData)
+                .then(res => res.json())
+                .then(processResponse)
+                .catch(err => console.log('Error: ', err));
+        }
+    }, [messageList])
 
     const submitMessage = e => {
         e.preventDefault();
         if (isWaiting) return;
-        console.log(messageRef.current.getElementsByTagName("textarea")[0].value);
-        setWaiting(true);
+
+        const message = messageRef.current.getElementsByTagName("textarea")[0].value.trim();
+        messageRef.current.getElementsByTagName("textarea")[0].value = '';
+        if (message) {
+            setMessageList([...messageList, { message: message }]);
+        }
     }
 
     const handleKeyDown = e => {
         if (e.which === 13) {
-            messageRef.current.getElementsByTagName("textarea")[0].style.height = "auto"; //<------resize text area
+            // messageRef.current.getElementsByTagName("textarea")[0].style.height = "auto"; //<------resize text area
             submitMessage(e);
         }
     }
 
     React.useEffect(() => {
-        messagesEndRef.current.scrollIntoView({behavior: 'smooth'});
+        messagesEndRef.current.scrollIntoView({ behavior: 'smooth' });
     }, [isWaiting])
 
     return (
@@ -110,27 +165,14 @@ export default function Chat() {
                     <Box
                         className={classes.chatHistory}
                     >
-                        <Message message="Lorem ipsum dolor sit amet, consectetur adipiscing elit."></Message>
-                        <Message user message="Vivamus ultricies neque vitae enim tristique consequat."></Message>
-                        <Message message="Proin venenatis odio in ornare mollis."></Message>
-                        <Message user message="Phasellus et ligula laoreet, dapibus velit a, consectetur arcu."></Message>
-                        <Message user message="Vivamus maximus nulla quis risus elementum, in venenatis massa tempus."></Message>
-                        <Message user message="Sed consectetur arcu porttitor tortor vestibulum, eleifend vestibulum eros ornare."></Message>
-                        <Message message="Quisque blandit augue a sodales dapibus."></Message>
-                        <Message message="Pellentesque at nulla a ligula ultricies sagittis ut sit amet massa."></Message>
-                        <Message message="Morbi vel elit a sapien sagittis vestibulum porttitor at odio."></Message>
-                        <Message message="Sed nec augue et ex pretium fermentum sed at massa."></Message>
-                        <Message user message="Sed maximus magna et pellentesque euismod."></Message>
-                        <Message user message="Suspendisse iaculis tortor vitae ligula mattis, nec commodo ligula vestibulum. 
-                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum hendrerit, 
-                        nunc ac mattis convallis, nisi felis fermentum massa, et porta neque libero eget tellus. Morbi ultricies purus eu 
-                        libero laoreet vulputate. Etiam mollis tempus lectus vel sollicitudin. Nam venenatis ultrices metus, eu pharetra 
-                        ex vehicula at. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                        Aliquam iaculis lectus dui, non fermentum dui pellentesque quis. Cras imperdiet viverra massa, sed molestie felis. 
-                        Morbi vulputate, ex eu malesuada pulvinar, augue nibh eleifend turpis, id finibus purus nunc sed est. Suspendisse potenti. "></Message>
-                        <Message user message="Donec posuere sapien vitae leo porttitor, vehicula eleifend ex imperdiet."></Message>
-                        {isWaiting ? <MessageLoading/> : null}
-                        <div ref={messagesEndRef}/>
+                        {messageList.map(msg => (
+                            <Message
+                                user={msg.username !== 'CHATBOT'}
+                                message={msg.message}
+                            />
+                        ))}
+                        {isWaiting ? <MessageLoading /> : null}
+                        <div ref={messagesEndRef} />
                     </Box>
                 </Scrollbars>
                 <form onSubmit={submitMessage}>
