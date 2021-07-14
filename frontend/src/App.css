@@ -40,77 +40,12 @@
 /*Custom css*/
 
 body {
-  background-color: #061F2F;
+    background-color: #fff;
+    touch-action: none;
 }
 
-h2, h3 {
-  color: rgb(176, 218, 255);
-  font-weight: lighter;
-}
-
-#messages {
-  background-color: #0b466c;
-  width: 66vw;
-  height: 66vh;
-  margin: 10px auto;
-  overflow-y: scroll;
-  padding: 10px;
-  border-radius: 3px;
-}
-.message-li {
-  list-style: none;
-  text-align: left;
-  margin: 0 0 10px 0;
-  border-radius: 20px;
-  padding: 10px;
-  background-color: #0b466c;
-}
-
-.username, .timeStamp {
-  font-style: italic;
-  font-size: .6em;
-}
-
-.username {
-  color: rgb(118, 245, 180);
-  font-weight: bold;
-}
-
-.timeStamp {
-  color: rgb(248, 204, 233);
-  margin-bottom: 5px;
-}
-
-.message-text {
-  color: rgb(176, 218, 255);
-  font-style: italic;
-}
-
-#chat-message-form, #login-form {
-  width: 66vw;
-  margin: 10px auto;
-}
-
-#message-input-field {
-  width: 70%;
-  margin: 0 10px 0 0;
-  border-radius: 3px;
-  border: none;
-  height: 30px;
-  vertical-align:bottom;
-  padding: 0 0 0 10px;
-  background-color: rgb(117, 205, 149);
-  color: #0e0e0e;
-}
-
-#send-message-btn {
-  height: 30px;
-  border: none;
-  padding: 0;
-  width: 20%;
-  border-radius: 3px;
-  border: none;
-  background-color: rgb(196, 14, 49);
-  color: white;
-  font-weight: bolder;
-}
+/* .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+} */
