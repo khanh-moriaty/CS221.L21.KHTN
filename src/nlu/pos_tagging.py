@@ -17,7 +17,7 @@ class POS:
         newpos = []
         for po in pos:
             if len(po[0].split()) > 1:
-                for i in len(po[0].split()):
+                for i in po[0].split():
                     newpos.append(po[1])
             else:
                 newpos.append(po[1])
