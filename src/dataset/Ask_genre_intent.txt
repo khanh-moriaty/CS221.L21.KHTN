@@ -25,8 +25,6 @@ dí dụ vài bài [GENRE].
 dí dụ vài bài [GENRE] thú dị đi bot ui.
 bot ơi cho tui mấy bài [GENRE] nghe coi
 give me an example song of [GENRE]
-cho toi mot bai [GENRE]
-e hay cho toi vai bai [GENRE] di
 chỉ t mấy bài về [GENRE] đi bot
 hmmm, cho mình 1 bài [GENRE] đi bot
 bạn ei, cho mình nghe 1 bài [GENRE] đi bạn
@@ -50,13 +48,3 @@ Chỉ t vài bài [GENRE] nào
 Cho mình tên bài hát thể loại [GENRE]
 tên 1 bài thuộc thể loại [GENRE]
 1 bài [GENRE]
-mot bai [GENRE]
-chi t mot bai [GENRE]
-the loai [GENRE] co bai nao hay z bot
-mot so bai thuoc the loai [GENRE] di bot ngu
-danh sach cac bai hat the loai [GENRE]
-cho minh nghe bai [GENRE] hay hay di
-mo minh 1 bai [GENRE] di nao
-di du 1 bai [GENRE] di a
-cho minh xin may bai [GENRE] voi a
-alo dua t may bai [GENRE] d

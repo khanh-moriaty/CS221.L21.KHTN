@@ -25,8 +25,6 @@ dí dụ vài bài của [ARTIST]
 dí dụ vài bài của [ARTIST] thú dị đi bot ui.
 bot ơi cho tui mấy bài của [ARTIST] nghe coi
 give me an example song of [ARTIST]
-cho toi mot bai cua [ARTIST]
-e hay cho toi vai bai cua [ARTIST] di
 chỉ t mấy bài của [ARTIST] đi bot
 hmmm, cho mình 1 bài của ca sĩ [ARTIST] đi bot
 bạn ei, cho mình nghe 1 bài của [ARTIST] đi bạn
@@ -52,9 +50,3 @@ liệt kê các bài hát của [ARTIST] cho t xem
 gợi ý t một số bài hát của [ARTIST]
 gợi ý t 1 bài hát hay của [ARTIST]
 dm cho bố m 1 bài của [ARTIST]
-danh sach cac bai hat cua [ARTIST]
-cho minh nghe bai cua [ARTIST] hay hay di
-mo minh 1 bai cua [ARTIST] di nao
-di du 1 bai cua [ARTIST] di a
-cho minh xin may bai cua [ARTIST] voi a
-alo dua t may bai cua [ARTIST] di
