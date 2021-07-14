@@ -29,7 +29,7 @@ const useStyles = makeStyles(theme => ({
     header: {
         height: '8%',
         textAlign: 'left',
-        padding: '1.5vw',
+        padding: '1.5vw 0 1.5vw 2vw',
         boxShadow: '0 2px 32px 0 rgba( 31, 38, 135, 0.25 )',
     },
     logo: {
@@ -78,8 +78,8 @@ export default function Chat() {
                     display='flex'
                     flexDirection='row'
                 >
-                    <img src="logo_musicbot_1.png" className={classes.logo} />
-                    <img src="logo_musicbot_2.png" className={classes.logo} />
+                    <img src="logo_musicbot_1.png" className={classes.logo} draggable="false" />
+                    <img src="logo_musicbot_2.png" className={classes.logo} draggable="false" />
                 </Box>
                 <Scrollbars autoHide>
                     <Box

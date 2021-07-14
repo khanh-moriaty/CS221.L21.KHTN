@@ -5,7 +5,7 @@ import {Box, Typography} from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
     root: {
-        margin: "1vw 1vw 1vw 1vw",
+        margin: "0.8vw 1vw 0.8vw 1vw",
     },
     messageUser: {
         background: '#ed6a5ad0',
