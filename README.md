@@ -2,7 +2,7 @@
 
 <h3> Repository này là đồ án của nhóm chúng tôi cho môn học CS221 - Xử lý ngôn ngữ tự nhiên. </h3>
 
-<img align="right" height=224 src="https://media.giphy.com/media/Fsn4WJcqwlbtS/giphy.gif"/>
+<img align="right" height=224 src="https://media1.tenor.com/images/01119418e1287777a0a88cf7166308bc/tenor.gif?itemid=9281996"/>
 
 <b> Đề tài: </b> Chatbot và hệ thống đối thoại.
 
