@@ -10,6 +10,8 @@ import SendIcon from '@material-ui/icons/Send';
 import Draggable from 'react-draggable';
 import { Scrollbars } from 'react-custom-scrollbars';
 
+import Message from './Message';
+
 const useStyles = makeStyles(theme => ({
     root: {
         width: '60vw',
@@ -83,65 +85,18 @@ export default function Chat() {
                     <Box
                         className={classes.chatHistory}
                     >
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
-                        <Typography>Hello</Typography>
+                        <Message message="Lorem ipsum dolor sit amet, consectetur adipiscing elit."></Message>
+                        <Message user message="Vivamus ultricies neque vitae enim tristique consequat."></Message>
+                        <Message message="Proin venenatis odio in ornare mollis."></Message>
+                        <Message user message="Phasellus et ligula laoreet, dapibus velit a, consectetur arcu."></Message>
+                        <Message user message="Vivamus maximus nulla quis risus elementum, in venenatis massa tempus."></Message>
+                        <Message user message="Sed consectetur arcu porttitor tortor vestibulum, eleifend vestibulum eros ornare."></Message>
+                        <Message message="Quisque blandit augue a sodales dapibus."></Message>
+                        <Message message="Pellentesque at nulla a ligula ultricies sagittis ut sit amet massa."></Message>
+                        <Message message="Morbi vel elit a sapien sagittis vestibulum porttitor at odio."></Message>
+                        <Message message="Sed nec augue et ex pretium fermentum sed at massa."></Message>
+                        <Message user message="Sed maximus magna et pellentesque euismod."></Message>
+                        <Message user message="Donec posuere sapien vitae leo porttitor, vehicula eleifend ex imperdiet."></Message>
                     </Box>
                 </Scrollbars>
                 <Box
