@@ -24,13 +24,10 @@ một số bài nhạc [MOOD].
 dí dụ vài bài [MOOD].
 dí dụ vài bài [MOOD] thú dị đi bot ui.
 bot ơi cho tui mấy bài [MOOD] nghe coi
-<<<<<<< HEAD
 chỉ t mấy bài về [MOOD] đi bot
-=======
 cho tôi một bài [MOOD]
 ê hãy cho tôi vài bài [MOOD] di
 chỉ tao mấy bài về [MOOD] đi bot
->>>>>>> classify
 hmmm, cho mình 1 bài [MOOD] đi bot
 bạn ơi, cho mình nghe 1 bài [MOOD] đi bạn
 sư phụ, cho đệ tử xin một số bài hát [MOOD] đi sư phụ
@@ -51,8 +48,6 @@ Chỉ tôi vài bài [MOOD] nào
 Cho mình tên bài hát chủ đề [MOOD]
 tên 1 bài thuộc chủ đề [MOOD]
 1 bài [MOOD]
-<<<<<<< HEAD
-=======
 một bài [MOOD]
 chỉ tôi một bài [MOOD]
 [MOOD] có bài nào hay vậy bot
@@ -60,4 +55,3 @@ một số bài [MOOD] đi bot ngu
 danh sách các bài hát [MOOD]
 cho mình nghe bài [MOOD] hay hay đi
 mở mình 1 bài [MOOD] đi nào
->>>>>>> classify
