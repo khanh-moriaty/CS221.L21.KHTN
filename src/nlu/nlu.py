@@ -19,7 +19,7 @@ class NLU:
         pos_tag = self.pos_model.predict_POS(sentence)
         ner_tag = self.ner_model.predict_NER(sentence, pos_tag)
         intent = self.intent_model.predict_intent(sentence, pos_tag, ner_tag)
-        return "You said \"{}\"".format(sentence)
+        return "Intent: {}\nNER: {}".format(intent, ner_tag)
         
     def load_model(self):
         '''

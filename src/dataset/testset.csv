@@ -1,0 +1,13 @@
+sentence_idx,word,pos,tag
+1,Có,V,O
+1,bài,N,O
+1,kpop,Np,B-G
+1,gì,P,O
+1,vui,A,B-M
+1,của,E,O
+1,Sơn,Np,B-A
+1,Tùng,Np,I-A
+1,MTP,Np,I-A
+1,không,R,O
+1,mày,P,O
+1,?,CH,O

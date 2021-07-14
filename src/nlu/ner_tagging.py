@@ -49,7 +49,7 @@ class NER:
         return [self.word2features(sent, i) for i in range(len(sent))]
 
     def load_NER_model(self):
-        self.model = pickle.load(open('/CS221.L21.KHTN/NER_model/final_model.sav','rb'))
+        self.model = pickle.load(open('/src/nlu/model/NER_model/final_model.sav','rb'))
 
     def predict_NER(self, sentence, pos_tag):
         '''
