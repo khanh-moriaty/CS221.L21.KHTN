@@ -4,17 +4,17 @@ Bạn ơi cho mình vài bài [MOOD] đi.
 Bot ơi gợi ý nhạc [MOOD] cho mình đi.
 Bot ơi xin bài [MOOD].
 ê bot cho bài [MOOD] hay coi.
-cho t bài [MOOD] nghe coi.
-Bài [MOOD] nào hay z.
-Bài nào [MOOD] hay z
+cho tôi bài [MOOD] nghe coi.
+Bài [MOOD] nào hay vậy.
+Bài nào [MOOD] hay vậy
 xin bài [MOOD] nghe coi.
 Cho tui bài [MOOD] nào đỉnh cao đi.
-Cho mình hỏi có bài [MOOD] nào hay ko?
+Cho mình hỏi có bài [MOOD] nào hay không?
 ê chỉ t bài [MOOD] hợp lý coi.
-tâm trạng [MOOD] có bài nào hay m.
-tâm trạng [MOOD] có bài nào nghe hay ko bot.
-ví dụ vài bài [MOOD] nghe đi iem.
-cho bố mày ví dụ bài [MOOD] đi m.
+tâm trạng [MOOD] có bài nào hay mày.
+tâm trạng [MOOD] có bài nào nghe hay không bot.
+ví dụ vài bài [MOOD] nghe đi em.
+cho bố mày ví dụ bài [MOOD] đi mày.
 một số bài hát [MOOD].
 một bài hát [MOOD].
 bài [MOOD] đi bot.
@@ -25,24 +25,33 @@ dí dụ vài bài [MOOD].
 dí dụ vài bài [MOOD] thú dị đi bot ui.
 bot ơi cho tui mấy bài [MOOD] nghe coi
 chỉ t mấy bài về [MOOD] đi bot
+cho tôi một bài [MOOD]
+ê hãy cho tôi vài bài [MOOD] di
+chỉ tao mấy bài về [MOOD] đi bot
 hmmm, cho mình 1 bài [MOOD] đi bot
-bạn ei, cho mình nghe 1 bài [MOOD] đi bạn
+bạn ơi, cho mình nghe 1 bài [MOOD] đi bạn
 sư phụ, cho đệ tử xin một số bài hát [MOOD] đi sư phụ
-onii chan, cho e bài [MOOD] đi onii
+onii chan, cho em bài [MOOD] đi onii
 mày ơi, cho tao vài bài [MOOD] nghe với coi
-dcm cho t bài [MOOD] nghe coi
-đưa cho t danh sách các bài [MOOD] coi
+dcm cho tao bài [MOOD] nghe coi
+đưa cho tớ danh sách các bài [MOOD] coi
 [MOOD] có bài nào hay
-hãy cho tui một bài hát siu hay mà [MOOD] xem nào
+hãy cho tui một bài hát siêu hay mà [MOOD] xem nào
 này, đưa 1 bài [MOOD] xem nào
-eg về [MOOD] song.
 nè bot, cho bài [MOOD] nghe
 Sủa vài bài [MOOD] nghe coi
 bạn ơi mở cho mình bài [MOOD] nghe với
 cho tôi biết một số bài [MOOD] nổi tiếng
-nói t nghe 1 bài [MOOD] nào
-Chỉ t vài bài [MOOD] nào
+nói tao nghe 1 bài [MOOD] nào
+Chỉ tôi vài bài [MOOD] nào
 1 bài [MOOD] đi nào
 Cho mình tên bài hát chủ đề [MOOD]
 tên 1 bài thuộc chủ đề [MOOD]
 1 bài [MOOD]
+một bài [MOOD]
+chỉ tôi một bài [MOOD]
+[MOOD] có bài nào hay vậy bot
+một số bài [MOOD] đi bot ngu
+danh sách các bài hát [MOOD]
+cho mình nghe bài [MOOD] hay hay đi
+mở mình 1 bài [MOOD] đi nào
