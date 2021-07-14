@@ -25,8 +25,6 @@ ví dụ vài bài [GENRE].
 ví dụ vài bài [GENRE] thú vị đi bot ơi.
 bot ơi cho tui mấy bài [GENRE] nghe coi
 give me an example song of [GENRE]
-<<<<<<< HEAD
-=======
 cho tôi một bài [GENRE]
 ê hãy cho tôi một bài [GENRE] di
 >>>>>>> classify
@@ -53,8 +51,6 @@ Chỉ tôi vài bài [GENRE] nào
 Cho mình tên bài hát thể loại [GENRE]
 tên 1 bài thuộc thể loại [GENRE]
 1 bài [GENRE]
-<<<<<<< HEAD
-=======
 chỉ tớ một bài [GENRE]
 thể loại [GENRE] có bài nào hay vậy bot
 một số bài hát thuộc thể loại [GENRE] đi bot ngu
@@ -63,4 +59,3 @@ cho mình nghe bài [GENRE] hay hay đi
 mở mình một bài [GENRE] đi nào
 cho mình xin mấy bài [GENRE] với ạ
 alo đưa mình mấy bài [GENRE] đi
->>>>>>> classify
