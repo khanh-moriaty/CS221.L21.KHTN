@@ -26,8 +26,6 @@ ví dụ vài bài [MOOD] của [ARTIST].
 ví dụ vài bài [MOOD] thú vị đi bot ơi của [ARTIST].
 bot ơi cho tui mấy bài [MOOD] của [ARTIST] nghe coi
 give me an example [MOOD] of [ARTIST] song 
-<<<<<<< HEAD
-=======
 cho tôi một bài [MOOD] của [ARTIST]
 ê hãy cho tôi vài bài [MOOD] của [ARTIST] đi
 >>>>>>> classify
@@ -54,8 +52,6 @@ Chỉ mình vài bài [MOOD] của [ARTIST] nào
 Cho mình tên bài hát chủ đề [MOOD] của [ARTIST]
 tên 1 bài thuộc chủ đề [MOOD] của [ARTIST]
 1 bài [MOOD] của [ARTIST]
-<<<<<<< HEAD
-=======
 một vài bài [MOOD] của [ARTIST]
 chỉ tôi 1 bài [MOOD] của [ARTIST]
 [MOOD] của [ARTIST] có bài nào hay vậy bot
@@ -63,4 +59,3 @@ một số bài [MOOD] của [ARTIST] đi bot ngu
 danh sách các bài hát [MOOD] của [ARTIST]
 cho mình nghe bài [MOOD] của [ARTIST] hay hay đi
 mở mình 1 bài [MOOD] của [ARTIST] đi nào
->>>>>>> classify
