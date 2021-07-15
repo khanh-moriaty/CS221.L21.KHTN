@@ -28,7 +28,6 @@ bot ơi cho tui mấy bài [MOOD] của [ARTIST] nghe coi
 give me an example [MOOD] of [ARTIST] song 
 cho tôi một bài [MOOD] của [ARTIST]
 ê hãy cho tôi vài bài [MOOD] của [ARTIST] đi
->>>>>>> classify
 chỉ t mấy bài về [MOOD] của [ARTIST] đi bot
 cho mình 1 bài [MOOD] của [ARTIST] đi bot
 bạn ê, cho mình nghe 1 bài [MOOD] của [ARTIST] đi bạn
