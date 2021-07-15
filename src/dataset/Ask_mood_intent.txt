@@ -21,8 +21,8 @@ bài [MOOD] đi bot.
 này, cho tui bài nào [MOOD] với.
 examples về nhạc [MOOD].
 một số bài nhạc [MOOD].
-dí dụ vài bài [MOOD].
-dí dụ vài bài [MOOD] thú dị đi bot ui.
+ví dụ vài bài [MOOD].
+ví dụ vài bài [MOOD] thú vị đi bot ơi.
 bot ơi cho tui mấy bài [MOOD] nghe coi
 chỉ t mấy bài về [MOOD] đi bot
 cho tôi một bài [MOOD]
