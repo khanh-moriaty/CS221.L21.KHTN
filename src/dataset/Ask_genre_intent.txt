@@ -27,7 +27,6 @@ bot ơi cho tui mấy bài [GENRE] nghe coi
 give me an example song of [GENRE]
 cho tôi một bài [GENRE]
 ê hãy cho tôi một bài [GENRE] di
->>>>>>> classify
 chỉ t mấy bài về [GENRE] đi bot
 hmmm, cho mình 1 bài [GENRE] đi bot
 bạn ơi, cho mình nghe 1 bài [GENRE] đi bạn
