@@ -3,58 +3,58 @@ Có bài [MOOD] nào của [ARTIST] hay hay không?
 Bạn ơi cho mình vài bài [MOOD] của [ARTIST] đi.
 Bot ơi gợi ý nhạc [MOOD] của [ARTIST] cho mình đi.
 Bot ơi xin bài [MOOD] của [ARTIST].
-ê bot cho bài [MOOD] của [ARTIST] hay coi.
-cho tôi bài [MOOD] của [ARTIST] nghe coi.
+Ê bot cho bài [MOOD] của [ARTIST] hay coi.
+Cho tôi bài [MOOD] của [ARTIST] nghe coi.
 Bài [MOOD] nào của [ARTIST] hay vậy.
 [ARTIST] có bài nào [MOOD] hay không
 Bài nào [MOOD] của [ARTIST] hay vậy
-xin bài [MOOD] của [ARTIST] nghe coi.
+Xin bài [MOOD] của [ARTIST] nghe coi.
 Cho tui bài [MOOD] nào đỉnh cao của [ARTIST] đi.
 Cho mình hỏi [ARTIST] có bài [MOOD] nào hay không?
-ê chỉ tôi bài [MOOD] của [ARTIST] hợp lý coi.
-tâm trạng [MOOD] có bài nào hay của [ARTIST] mày.
-tâm trạng [MOOD] có bài nào của [ARTIST] nghe hay không bot.
-ví dụ vài bài [MOOD] của [ARTIST] nghe đi em.
-cho bố mày ví dụ bài [MOOD] của [ARTIST] đi mày.
-một số bài hát [MOOD] của [ARTIST].
-một bài hát [MOOD] của [ARTIST].
-bài [MOOD] của [ARTIST] đi bot.
-này, cho tui bài nào [MOOD] của [ARTIST] với.
-examples về nhạc [MOOD] của [ARTIST].
-một số bài nhạc [MOOD] của [ARTIST].
-ví dụ vài bài [MOOD] của [ARTIST].
-ví dụ vài bài [MOOD] thú vị đi bot ơi của [ARTIST].
-bot ơi cho tui mấy bài [MOOD] của [ARTIST] nghe coi
-give me an example [MOOD] of [ARTIST] song 
-cho tôi một bài [MOOD] của [ARTIST]
-ê hãy cho tôi vài bài [MOOD] của [ARTIST] đi
-chỉ t mấy bài về [MOOD] của [ARTIST] đi bot
-cho mình 1 bài [MOOD] của [ARTIST] đi bot
-bạn ê, cho mình nghe 1 bài [MOOD] của [ARTIST] đi bạn
-hãy cho em một số bài hát hay hay hợp với tâm trạng [MOOD] của [ARTIST] đi ạ
-sư phụ, cho đệ tử xin một số bài hát [MOOD] của [ARTIST] đi sư phụ
-onii chan, cho em bài [MOOD] của [ARTIST] đi onii
-mày ơi, cho tao vài bài [MOOD] của [ARTIST] nghe với coi
-dcm cho tao bài [MOOD] của [ARTIST] nghe coi
-đưa cho ttao danh sách các bài [MOOD] của [ARTIST] coi
+Ê chỉ tôi bài [MOOD] của [ARTIST] hợp lý coi.
+Tâm trạng [MOOD] có bài nào hay của [ARTIST] mày.
+Tâm trạng [MOOD] có bài nào của [ARTIST] nghe hay không bot.
+Ví dụ vài bài [MOOD] của [ARTIST] nghe đi em.
+Cho bố mày ví dụ bài [MOOD] của [ARTIST] đi mày.
+Một số bài hát [MOOD] của [ARTIST].
+Một bài hát [MOOD] của [ARTIST].
+Bài [MOOD] của [ARTIST] đi bot.
+Này, cho tui bài nào [MOOD] của [ARTIST] với.
+Examples về nhạc [MOOD] của [ARTIST].
+Một số bài nhạc [MOOD] của [ARTIST].
+Ví dụ vài bài [MOOD] của [ARTIST].
+Ví dụ vài bài [MOOD] thú vị đi bot ơi của [ARTIST].
+Bot ơi cho tui mấy bài [MOOD] của [ARTIST] nghe coi
+Give me an example [MOOD] of [ARTIST] song 
+Cho tôi một bài [MOOD] của [ARTIST]
+Ê hãy cho tôi vài bài [MOOD] của [ARTIST] đi
+Chỉ t mấy bài về [MOOD] của [ARTIST] đi bot
+Cho mình 1 bài [MOOD] của [ARTIST] đi bot
+Bạn ê, cho mình nghe 1 bài [MOOD] của [ARTIST] đi bạn
+Hãy cho em một số bài hát hay hay hợp với tâm trạng [MOOD] của [ARTIST] đi ạ
+Sư phụ, cho đệ tử xin một số bài hát [MOOD] của [ARTIST] đi sư phụ
+Onii chan, cho em bài [MOOD] của [ARTIST] đi onii
+Mày ơi, cho tao vài bài [MOOD] của [ARTIST] nghe với coi
+Dcm cho tao bài [MOOD] của [ARTIST] nghe coi
+Đưa cho ttao danh sách các bài [MOOD] của [ARTIST] coi
 [MOOD] thì [ARTIST] có bài nào hay
-hãy cho tui một bài hát của [ARTIST] siêu hay mà [MOOD] xem nào
-này, đưa 1 bài [MOOD] của [ARTIST] xem nào
-eg về [MOOD] song of [ARTIST].
-nè bot, cho bài [MOOD] của [ARTIST] nghe
+Hãy cho tui một bài hát của [ARTIST] siêu hay mà [MOOD] xem nào
+Này, đưa 1 bài [MOOD] của [ARTIST] xem nào
+Eg về [MOOD] song of [ARTIST].
+Nè bot, cho bài [MOOD] của [ARTIST] nghe
 Sủa vài bài [MOOD] của [ARTIST] nghe coi
-bạn ơi mở cho mình bài [MOOD] của [ARTIST] nghe với
-cho tôi biết một số bài [MOOD] của [ARTIST] nổi tiếng
-nói tôi nghe 1 bài [MOOD] của [ARTIST] nào
+Bạn ơi mở cho mình bài [MOOD] của [ARTIST] nghe với
+Cho tôi biết một số bài [MOOD] của [ARTIST] nổi tiếng
+Nói tôi nghe 1 bài [MOOD] của [ARTIST] nào
 Chỉ mình vài bài [MOOD] của [ARTIST] nào
 1 bài [MOOD] của [ARTIST] đi nào
 Cho mình tên bài hát chủ đề [MOOD] của [ARTIST]
-tên 1 bài thuộc chủ đề [MOOD] của [ARTIST]
+Tên 1 bài thuộc chủ đề [MOOD] của [ARTIST]
 1 bài [MOOD] của [ARTIST]
-một vài bài [MOOD] của [ARTIST]
-chỉ tôi 1 bài [MOOD] của [ARTIST]
+Một vài bài [MOOD] của [ARTIST]
+Chỉ tôi 1 bài [MOOD] của [ARTIST]
 [MOOD] của [ARTIST] có bài nào hay vậy bot
-một số bài [MOOD] của [ARTIST] đi bot ngu
-danh sách các bài hát [MOOD] của [ARTIST]
-cho mình nghe bài [MOOD] của [ARTIST] hay hay đi
-mở mình 1 bài [MOOD] của [ARTIST] đi nào
+Một số bài [MOOD] của [ARTIST] đi bot ngu
+Danh sách các bài hát [MOOD] của [ARTIST]
+Cho mình nghe bài [MOOD] của [ARTIST] hay hay đi
+Mở mình 1 bài [MOOD] của [ARTIST] đi nào
