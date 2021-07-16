@@ -1,3 +1,4 @@
+from nlu.Embedding import Embedding
 from .pos_tagging import POS
 from .ner_tagging import NER
 from .intent_classifier import IntentClassifier
@@ -87,10 +88,14 @@ class NLU:
         self.pos_model = POS()
         self.ner_model = NER()
         self.intent_model = IntentClassifier()
+        self.embedding_model = Embedding()
         
         self.pos_model.load_POS_model()
         self.ner_model.load_NER_model()
         self.intent_model.load_intent_model()
+<<<<<<< HEAD
+        self.embedding_model.load_fasttext()
+=======
 
     def load_data(self):
         self.ans_bye = load_ans("dataset/Answer_bye.txt")
@@ -105,3 +110,4 @@ class NLU:
             self.moods = json.load(f)
 
 
+>>>>>>> master
