@@ -20,7 +20,7 @@ def pred(W, X):
 
 class IntentClassifier:
     
-    def predict_intent(self, sentence, pos_tag, ner_tag):
+    def predict_intent(self, sentence, pos_tag, ner_tag, embedding):
         '''
         Classify the chatbot intent of an input sentence based on its content, 
         its corresponding POS tags and NER tags.
@@ -34,7 +34,7 @@ class IntentClassifier:
         '''
         
         # Template: always return class 0.
-        vec = np.array(self.predict_1sen(sentence))
+        vec = np.array(self.predict_1sen(sentence, embedding))
         test_array = np.array([vec])
         temp = test_array.T
         K = np.concatenate((np.ones((1, len(test_array))), temp), axis = 0)
@@ -43,11 +43,11 @@ class IntentClassifier:
         return tem[0]
         
     def load_intent_model(self):
-         #dowload here https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.vi.300.bin.gz
-        self.ft = fasttext.load_model('cc.vi.300.bin')
+        #dowload here https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.vi.300.bin.gz
+        #self.ft = fasttext.load_model('/src/nlu/cc.vi.300.bin')
         self.model = pickle.load(open('/src/nlu/model/clf_model/final_model_new_v2.sav','rb'))
 
-    def predict_1sen(self, sen):
+    def predict_1sen(self, sen, embedding):
         vec = np.zeros((300, ), dtype='float32')
         words_arr_1sen = underthesea.word_tokenize(sen, format="text").split()
         n = len(words_arr_1sen)
@@ -59,7 +59,7 @@ class IntentClassifier:
                 n -= 1
                 continue
             try:
-                temp = self.ft.get_word_vector(word)
+                temp = embedding.get_embedding(word)
                 #tong = sum(temp)
                 #norm = [float(i)/tong for i in temp]
                 vec += temp            
