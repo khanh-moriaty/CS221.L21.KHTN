@@ -44,7 +44,7 @@ class IntentClassifier:
         
     def load_intent_model(self):
          #dowload here https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.vi.300.bin.gz
-        self.ft = fasttext.load_model('cc.vi.300.bin')
+        self.ft = fasttext.load_model('/cc.vi.300.bin')
         self.model = pickle.load(open('/src/nlu/model/clf_model/final_model_new_v2.sav','rb'))
 
     def predict_1sen(self, sen):
