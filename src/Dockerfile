@@ -9,14 +9,14 @@ ENV     FLASK_APP=server.py FLASK_RUN_PORT=7777
 COPY    ./requirements.txt ./
 RUN     apt-get update && \
         apt-get install -y wget && \
-        wget -q https://thiaisotajppub.s3-ap-northeast-1.amazonaws.com/publicfiles/wiki.vi.model.bin.gz && \
-        gzip -d wiki.vi.model.bin.gz && \
+        wget -q https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.vi.300.bin.gz && \
+        gzip -d cc.vi.300.bin.gz && \
         pip install -r requirements.txt
 
 COPY    ./ src/
 WORKDIR src/
 
-RUN     mv /wiki.vi.model.bin /src/nlu/
+RUN     mv /cc.vi.300.bin /src/nlu/
 
 CMD     flask run -h 0.0.0.0
 
