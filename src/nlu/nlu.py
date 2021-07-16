@@ -91,17 +91,18 @@ class NLU:
         self.pos_model.load_POS_model()
         self.ner_model.load_NER_model()
         self.intent_model.load_intent_model()
+        self.load_data()
 
     def load_data(self):
-        self.ans_bye = load_ans("dataset/Answer_bye.txt")
-        self.ans_greet = load_ans("dataset/Answer_greet.txt")
-        self.ans_findsong = load_ans("dataset/Answer_findsong.txt")
-        self.ans_notfindsong = load_ans("dataset/Answer_notfindsong.txt")
-        self.ans_kohieu = load_ans("dataset/Answer_kohieu.txt")
-        self.artists = load_ans("dataset/Singer.txt")
-        with open('dataset/Genre.json') as f:
+        self.ans_bye = load_ans("src/dataset/Answer_bye.txt")
+        self.ans_greet = load_ans("src/dataset/Answer_greet.txt")
+        self.ans_findsong = load_ans("src/dataset/Answer_findsong.txt")
+        self.ans_notfindsong = load_ans("src/dataset/Answer_notfindsong.txt")
+        self.ans_kohieu = load_ans("src/dataset/Answer_kohieu.txt")
+        self.artists = load_ans("src/dataset/Singer.txt")
+        with open('src/dataset/Genre.json') as f:
             self.genres = json.load(f)
-        with open('dataset/mood.json') as f:
+        with open('src/dataset/mood.json') as f:
             self.moods = json.load(f)
 
 
