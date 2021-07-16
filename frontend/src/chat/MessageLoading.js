@@ -7,7 +7,7 @@ import './MessageLoading.css';
 
 const useStyles = makeStyles(theme => ({
     root: {
-        margin: "0.8vw 1vw 0.8vw 1vw",
+        margin: "6pt 12pt 6pt 12pt",
     },
     message: {
         background: '#E8D7FFd0',
