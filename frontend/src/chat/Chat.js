@@ -12,6 +12,7 @@ import { Scrollbars } from 'react-custom-scrollbars';
 
 import Message from './Message';
 import MessageLoading from './MessageLoading';
+import MessageMedia from './MessageMedia';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -165,11 +166,15 @@ export default function Chat() {
                     <Box
                         className={classes.chatHistory}
                     >
+                        <div style={{ height: "16pt" }} />
                         {messageList.map(msg => (
-                            <Message
-                                user={msg.username !== 'CHATBOT'}
-                                message={msg.message}
-                            />
+                            <div>
+                                <Message
+                                    user={msg.username !== 'CHATBOT'}
+                                    message={msg.message}
+                                />
+                                {msg.url ? <MessageMedia url={msg.url}/> : null}
+                            </div>
                         ))}
                         {isWaiting ? <MessageLoading /> : null}
                         <div ref={messagesEndRef} />
