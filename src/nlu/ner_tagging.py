@@ -66,13 +66,13 @@ class NER:
 
         return features
 
-    def sent2features(self, sent):
-        return [self.word2features(sent, i) for i in range(len(sent))]
+    def sent2features(self, sent, embedding):
+        return [self.word2features(sent, i, embedding) for i in range(len(sent))]
 
     def load_NER_model(self):
         self.model = pickle.load(open('/src/nlu/model/NER_model/final_model_w2v.sav','rb'))
 
-    def predict_NER(self, sentence, pos_tag):
+    def predict_NER(self, sentence, pos_tag, embedding):
         '''
         Predict NER tagging of a sentence.
         
@@ -88,7 +88,7 @@ class NER:
         sentence = sentence.split()
         for i in range(len(sentence)):
             data.append([sentence[i], pos_tag[i]])
-        X_test = [self.sent2features(data)]
+        X_test = [self.sent2features(data, embedding)]
         y_pre = self.model.predict(X_test)
         # Template: Predict "O" tag for all words.
         return y_pre

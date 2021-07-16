@@ -5,7 +5,7 @@ import numpy as np
 class Embedding:
 
     def load_fasttext(self):
-        self.model = fasttext.load_model('/src/nlu/cc.vi.300.bin')
+        self.model = fasttext.load_model('/cc.vi.300.bin')
 
     def get_embedding(self, word):
         word=word.lower()
