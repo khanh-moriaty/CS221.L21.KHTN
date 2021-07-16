@@ -1,3 +1,4 @@
+from nlu.embedding import Embedding
 from .pos_tagging import POS
 from .ner_tagging import NER
 from .intent_classifier import IntentClassifier
@@ -28,9 +29,10 @@ class NLU:
         
         # Template: Reponse 'You said "sentence"'.
         pos_tag = self.pos_model.predict_POS(sentence)
-        ner_tag = self.ner_model.predict_NER(sentence, pos_tag)
-        intent = self.intent_model.predict_intent(sentence, pos_tag, ner_tag)
+        ner_tag = self.ner_model.predict_NER(sentence, pos_tag, self.embedding_model)[0]
+        intent = self.intent_model.predict_intent(sentence, pos_tag, ner_tag, self.embedding_model)
         input = sentence.split()
+        artist = genre = mood = ''
         if intent==3:
             ans = random.choice(self.ans_greet)
         elif intent==2:
@@ -38,7 +40,6 @@ class NLU:
         elif intent==4:
             ans = random.choice(self.ans_kohieu)
         else:
-            artist = ""
             k = 0
             for i in range(len(ner_tag)):
                 if ner_tag[i]=="B-A":
@@ -49,12 +50,10 @@ class NLU:
                 artist += " " + str(input[k]).capitalize()
                 k += 1
                 
-            genre = ""
             for i in range(len(ner_tag)):
                 if ner_tag[i]=="B-G":
                     genre += str(input[i])
 
-            mood = ""
             k = 0
             for i in range(len(ner_tag)):
                 if ner_tag[i]=="B-M":
@@ -87,10 +86,13 @@ class NLU:
         self.pos_model = POS()
         self.ner_model = NER()
         self.intent_model = IntentClassifier()
+        self.embedding_model = Embedding()
         
         self.pos_model.load_POS_model()
         self.ner_model.load_NER_model()
         self.intent_model.load_intent_model()
+        self.embedding_model.load_fasttext()
+        
         self.load_data()
 
     def load_data(self):
@@ -104,5 +106,3 @@ class NLU:
             self.genres = json.load(f)
         with open('src/dataset/mood.json') as f:
             self.moods = json.load(f)
-
-

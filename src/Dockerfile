@@ -8,15 +8,12 @@ ENV     FLASK_APP=server.py FLASK_RUN_PORT=7777
 
 COPY    ./requirements.txt ./
 RUN     apt-get update && \
-        apt-get install -y wget && \
-        wget -q https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.vi.300.bin.gz && \
-        gzip -d cc.vi.300.bin.gz && \
-        pip install -r requirements.txt
+        apt-get install -y build-essential && \
+        pip install -r requirements.txt && \
+        gdown --id 1eK0BuKOMtqOYnZ45cPfXm9WRbkR-iX80
 
 COPY    ./ src/
 WORKDIR src/
-
-RUN     mv /cc.vi.300.bin /src/nlu/
 
 CMD     flask run -h 0.0.0.0
 

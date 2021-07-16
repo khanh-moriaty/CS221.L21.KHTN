@@ -2,8 +2,9 @@ import pickle
  
 class NER:
     
-    def word2features(self, sent, i):
+    def word2features(self, sent, i, embedding):
         word = sent[i][0]
+        wordembedding = embedding.get_embedding(word)
         postag = sent[i][1]
 
         features = {
@@ -16,7 +17,13 @@ class NER:
             'word.isdigit()': word.isdigit(),
             'postag': postag,
             'postag[:2]': postag[:2],
+            'wordinitialcap': word[0].isupper(),
+            'wordmixedcap': len([x for x in word[1:] if x.isupper()])>0,
+            'wordallcap': len([x for x in word if x.isupper()])==len(word),
+            'distfromsentbegin': i
         }
+        for iv,value in enumerate(wordembedding):
+            features['v{}'.format(iv)]=value
         if i > 0:
             word1 = sent[i-1][0]
             postag1 = sent[i-1][1]
@@ -26,7 +33,14 @@ class NER:
                 '-1:word.isupper()': word1.isupper(),
                 '-1:postag': postag1,
                 '-1:postag[:2]': postag1[:2],
+                '-1:wordlength': len(word),
+                '-1:wordinitialcap': word[0].isupper(),
+                '-1:wordmixedcap': len([x for x in word[1:] if x.isupper()])>0,
+                '-1:wordallcap': len([x for x in word if x.isupper()])==len(word),
             })
+            wordembdding=embedding.get_embedding(word1)
+            for iv,value in enumerate(wordembdding):
+                features['-1:v{}'.format(iv)]=value
         else:
             features['BOS'] = True
 
@@ -39,19 +53,26 @@ class NER:
                 '+1:word.isupper()': word1.isupper(),
                 '+1:postag': postag1,
                 '+1:postag[:2]': postag1[:2],
+                '+1:wordlength': len(word),
+                '+1:wordinitialcap': word[0].isupper(),
+                '+1:wordmixedcap': len([x for x in word[1:] if x.isupper()])>0,
+                '+1:wordallcap': len([x for x in word if x.isupper()])==len(word),
             })
+            wordembdding=embedding.get_embedding(word1)
+            for iv,value in enumerate(wordembdding):
+                features['+1:v{}'.format(iv)]=value
         else:
             features['EOS'] = True
 
         return features
 
-    def sent2features(self, sent):
-        return [self.word2features(sent, i) for i in range(len(sent))]
+    def sent2features(self, sent, embedding):
+        return [self.word2features(sent, i, embedding) for i in range(len(sent))]
 
     def load_NER_model(self):
-        self.model = pickle.load(open('/src/nlu/model/NER_model/final_model.sav','rb'))
+        self.model = pickle.load(open('/src/nlu/model/NER_model/final_model_w2v.sav','rb'))
 
-    def predict_NER(self, sentence, pos_tag):
+    def predict_NER(self, sentence, pos_tag, embedding):
         '''
         Predict NER tagging of a sentence.
         
@@ -67,7 +88,7 @@ class NER:
         sentence = sentence.split()
         for i in range(len(sentence)):
             data.append([sentence[i], pos_tag[i]])
-        X_test = [self.sent2features(data)]
+        X_test = [self.sent2features(data, embedding)]
         y_pre = self.model.predict(X_test)
         # Template: Predict "O" tag for all words.
         return y_pre
