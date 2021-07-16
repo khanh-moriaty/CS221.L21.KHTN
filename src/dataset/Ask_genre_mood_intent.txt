@@ -1,0 +1,59 @@
+Cho tui bài [GENRE] [MOOD] đi.
+Có bài [GENRE] [MOOD] nào hay hay không?
+Bạn ơi cho mình vài bài [GENRE] [MOOD] đi.
+Bot ơi gợi ý nhạc [MOOD] thể loại [GENRE] cho mình đi.
+Bot ơi xin bài [GENRE] [MOOD]
+Ê bot cho bài [GENRE] [MOOD] hay coi.
+Cho tôi bài [GENRE] [MOOD] nghe coi.
+Bài [MOOD] nào thuộc thể loại [GENRE] hay vậy.
+có bài [GENRE] nào [MOOD] mà hay không
+Bài nào [GENRE] [MOOD] hay vậy
+Xin bài [GENRE] [MOOD] nghe coi.
+Cho tui bài [GENRE] [MOOD] nào đỉnh cao đi.
+Cho mình hỏi có bài [GENRE] [MOOD] nào hay không?
+Ê chỉ tôi bài [GENRE] hợp tâm trạng [MOOD] coi.
+Tâm trạng [MOOD] có bài [GENRE] nào hay mày.
+Tâm trạng [MOOD] có bài [GENRE] nào nghe hay không bot.
+Ví dụ vài bài [GENRE] mà [MOOD] nghe đi em.
+Cho bố mày ví dụ bài [GENRE] [MOOD] đi mày.
+Một số bài hát [GENRE] [MOOD].
+Một bài hát [GENRE] [MOOD].
+Bài [GENRE] [MOOD] đi bot.
+Này, cho tui bài nào [MOOD] mà [GENRE] với.
+Examples về nhạc [MOOD] thể loại [GENRE].
+Một số bài nhạc [MOOD] thuộc thể loại [GENRE].
+Ví dụ vài bài [GENRE] [MOOD].
+Ví dụ vài bài [GENRE] [MOOD] thú vị đi bot ơi.
+Bot ơi cho tui mấy bài [GENRE] [MOOD] nghe coi
+Cho tôi một bài [GENRE] [MOOD]
+Ê hãy cho tôi vài bài [GENRE] [MOOD] đi
+Chỉ t mấy bài về [GENRE] mà [MOOD] đi bot
+Cho mình 1 bài [GENRE] [MOOD] đi bot
+Bạn ê, cho mình nghe 1 bài [MOOD] đi bạn thể loại [GENRE] nha
+Hãy cho em một số bài hát [GENRE] hay hay hợp với tâm trạng [MOOD] đi ạ
+Sư phụ, cho đệ tử xin một số bài hát [GENRE] [MOOD] đi sư phụ
+Onii chan, cho em bài [GENRE] [MOOD] đi onii
+Mày ơi, cho tao vài bài [GENRE] [MOOD] nghe với coi
+Dcm cho tao bài [GENRE] [MOOD] nghe coi
+Đưa cho tao danh sách các bài [GENRE] [MOOD] coi
+[GENRE] [MOOD] thì có bài nào hay
+Hãy cho tui một bài hát [GENRE] siêu hay mà [MOOD] xem nào
+Này, đưa 1 bài [GENRE] [MOOD] xem nào
+Eg về [MOOD] song of [GENRE].
+Nè bot, cho bài [GENRE] [MOOD] nghe
+Sủa vài bài [GENRE] [MOOD] nghe coi
+Bạn ơi mở cho mình bài [GENRE] [MOOD] nghe với
+Cho tôi biết một số bài [GENRE] [MOOD] nổi tiếng
+Nói tôi nghe 1 bài [GENRE] [MOOD] nào
+Chỉ mình vài bài [GENRE] [MOOD] nào
+1 bài [GENRE] [MOOD] đi nào
+Cho mình tên bài hát chủ đề [MOOD] thể loại [GENRE]
+Tên 1 bài thuộc chủ đề [MOOD] thể loại [GENRE]
+1 bài [GENRE] [MOOD]
+Một vài bài [GENRE] [MOOD]
+Chỉ tôi 1 bài [GENRE] [MOOD]
+[MOOD] có bài [GENRE] nào hay vậy bot
+Một số bài [GENRE] [MOOD] đi bot ngu
+Danh sách các bài hát [GENRE] [MOOD]
+Cho mình nghe bài [GENRE] [MOOD] hay hay đi
+Mở mình 1 bài [GENRE] [MOOD] đi nào
