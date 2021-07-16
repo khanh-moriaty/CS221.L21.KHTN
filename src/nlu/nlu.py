@@ -29,8 +29,8 @@ class NLU:
         
         # Template: Reponse 'You said "sentence"'.
         pos_tag = self.pos_model.predict_POS(sentence)
-        ner_tag = self.ner_model.predict_NER(sentence, pos_tag)
-        intent = self.intent_model.predict_intent(sentence, pos_tag, ner_tag)
+        ner_tag = self.ner_model.predict_NER(sentence, pos_tag, self.embedding_model)
+        intent = self.intent_model.predict_intent(sentence, pos_tag, ner_tag, self.embedding_model)
         input = sentence.split()
         if intent==3:
             ans = random.choice(self.ans_greet)
