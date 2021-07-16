@@ -3,7 +3,7 @@ import React from 'react';
 import { useTheme } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { makeStyles } from '@material-ui/core/styles';
-import { Box, Typography } from '@material-ui/core';
+import { Box } from '@material-ui/core';
 
 import './MessageMedia.css';
 
@@ -61,6 +61,7 @@ export default function MessageMedia(props) {
     const getYoutube = id => (
         <iframe
             className={classes.ytWrap}
+            title={id}
             src={"https://www.youtube-nocookie.com/embed/" + id}
             frameborder="0"
             allow="autoplay; clipboard-write; encrypted-media"
@@ -70,6 +71,7 @@ export default function MessageMedia(props) {
     const getZing = id => (
         <iframe
             className={classes.zingWrap}
+            title={id}
             src={"https://zingmp3.vn/embed/song/" + id + "?start=false"}
             frameborder="0"
         />
@@ -81,8 +83,8 @@ export default function MessageMedia(props) {
                 className={smallMedia ? "nct-media-small" : "nct-media"}
                 width='210pt'
                 height='191pt'
+                title={id}
                 src={"https://www.nhaccuatui.com/mh/normal/" + id}
-                title="YouTube video player"
                 frameborder="0"
                 allow="autoplay; clipboard-write; encrypted-media"
             />

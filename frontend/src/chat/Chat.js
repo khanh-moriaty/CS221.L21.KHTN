@@ -1,10 +1,7 @@
 import React from 'react';
 
-import { useTheme } from '@material-ui/core/styles';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-
 import { makeStyles } from '@material-ui/core/styles';
-import { Card, Typography, Box, Grid, InputBase, IconButton } from '@material-ui/core';
+import { Box, InputBase, IconButton } from '@material-ui/core';
 import SendIcon from '@material-ui/icons/Send';
 
 import Draggable from 'react-draggable';
@@ -58,8 +55,6 @@ const url = document.location.href + '/api/frontend/message';
 
 export default function Chat() {
 
-    const theme = useTheme();
-
     const classes = useStyles();
 
     const messageRef = React.useRef();
@@ -91,6 +86,7 @@ export default function Chat() {
             .then(res => res.json())
             .then(processResponse)
             .catch(err => console.log(err));
+        // eslint-disable-next-line
     }, [])
 
     // On user input
@@ -112,6 +108,7 @@ export default function Chat() {
                 .then(processResponse)
                 .catch(err => console.log('Error: ', err));
         }
+        // eslint-disable-next-line
     }, [messageList])
 
     const submitMessage = e => {
@@ -159,8 +156,8 @@ export default function Chat() {
                     display='flex'
                     flexDirection='row'
                 >
-                    <img src="logo_musicbot_1.png" className={classes.logo} draggable="false" />
-                    <img src="logo_musicbot_2.png" className={classes.logo} draggable="false" />
+                    <img src="logo_musicbot_1.png" alt="logo1" className={classes.logo} draggable="false" />
+                    <img src="logo_musicbot_2.png" alt="logo2" className={classes.logo} draggable="false" />
                 </Box>
                 <Scrollbars autoHide universal>
                     <Box
