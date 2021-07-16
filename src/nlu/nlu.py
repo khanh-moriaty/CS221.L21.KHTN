@@ -32,6 +32,7 @@ class NLU:
         ner_tag = self.ner_model.predict_NER(sentence, pos_tag, self.embedding_model)
         intent = self.intent_model.predict_intent(sentence, pos_tag, ner_tag, self.embedding_model)
         input = sentence.split()
+        artist = genre = mood = ''
         if intent==3:
             ans = random.choice(self.ans_greet)
         elif intent==2:
@@ -39,7 +40,6 @@ class NLU:
         elif intent==4:
             ans = random.choice(self.ans_kohieu)
         else:
-            artist = ""
             k = 0
             for i in range(len(ner_tag)):
                 if ner_tag[i]=="B-A":
@@ -50,12 +50,10 @@ class NLU:
                 artist += " " + str(input[k]).capitalize()
                 k += 1
                 
-            genre = ""
             for i in range(len(ner_tag)):
                 if ner_tag[i]=="B-G":
                     genre += str(input[i])
 
-            mood = ""
             k = 0
             for i in range(len(ner_tag)):
                 if ner_tag[i]=="B-M":
