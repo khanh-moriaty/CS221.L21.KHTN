@@ -23,42 +23,42 @@ Một số bài hát thú vị của [ARTIST].
 Một số bài hát thú vị của [ARTIST].
 Ví dụ vài bài của [ARTIST]
 Ví dụ vài bài của [ARTIST] thú vị đi bot ơi.
-Bot ơi cho tui mấy bài của [ARTIST] nghe coi
-Give me an example song of [ARTIST]
-Chỉ t mấy bài của [ARTIST] đi bot
-Cho tôi môt bài của [ARTIST]
-E hãy cho tôi vài bài của [ARTIST] di
-Chỉ tao mấy bài của [ARTIST] đi bot
-Hmmm, cho mình 1 bài của ca sĩ [ARTIST] đi bot
-Bạn ơi, cho mình nghe 1 bài của [ARTIST] đi bạn
-Hãy cho em một số bài hát hay hay của [ARTIST] đi ạ
-Sư phụ, cho đệ tử xin một số bài hát do [ARTIST] trình bày đi sư phụ
-Onii chan, cho e bài hát do [ARTIST] hát đi onii
-Mày ơi, cho tao vài bài do [ARTIST] biểu diễn nghe với coi
-Dcm cho t mấy bài của [ARTIST] nghe coi
-Đưa cho t danh sách các bài các bài hát của [ARTIST] coi
-[ARTIST] có bài nào hay
-Hãy cho tui một bài hát siu hay của ca sĩ [ARTIST] xem nào
-Này, đưa 1 bài của ca sĩ xem nào
-Nhóm [ARTIST] có bài nào nghe ổn ko
-Nè bot, cho bài của [ARTIST] nghe
-Sủa vài bài của [ARTIST]
-Tên 1 bài hát của [ARTIST]
-Danh sách các bài hát của [ARTIST]
-[ARTIST] hát những bài nào
-Ê ê cho t bài của [ARTIST] đi
-Hãy ví dụ một bài của [ARTIST]
-Hãy ví dụ một số bài hát của [ARTIST] đi
-Liệt kê các bài hát của [ARTIST] cho t xem
-Gợi ý t một số bài hát của [ARTIST]
-Gợi ý t 1 bài hát hay của [ARTIST]
-Dm cho bố m 1 bài của [ARTIST]
-Danh sách các bài của [ARTIST]
-Cho mình nghe bài của [ARTIST] hay hay di
-Mở mình 1 bài của [ARTIST] đi nào
-Ví dụ 1 bài của [ARTIST] đi ạ
-Cho mình xin mấy bài của [ARTIST] với ạ
-Alo đưa tao mấy bài của [ARTIST] đi
+Bot ơi cho tui mấy bài của [ARTIST] nghe coi.
+Give me an example song of [ARTIST].
+Chỉ t mấy bài của [ARTIST] đi bot.
+Cho tôi môt bài của [ARTIST].
+E hãy cho tôi vài bài của [ARTIST] di.
+Chỉ tao mấy bài của [ARTIST] đi bot.
+Hmmm, cho mình 1 bài của ca sĩ [ARTIST] đi bot.
+Bạn ơi, cho mình nghe 1 bài của [ARTIST] đi bạn.
+Hãy cho em một số bài hát hay hay của [ARTIST] đi ạ.
+Sư phụ, cho đệ tử xin một số bài hát do [ARTIST] trình bày đi sư phụ.
+Onii chan, cho e bài hát do [ARTIST] hát đi onii.
+Mày ơi, cho tao vài bài do [ARTIST] biểu diễn nghe với coi.
+Dcm cho t mấy bài của [ARTIST] nghe coi.
+Đưa cho t danh sách các bài các bài hát của [ARTIST] coi.
+[ARTIST] có bài nào hay.
+Hãy cho tui một bài hát siu hay của ca sĩ [ARTIST] xem nào.
+Này, đưa 1 bài của ca sĩ xem nào.
+Nhóm [ARTIST] có bài nào nghe ổn ko.
+Nè bot, cho bài của [ARTIST] nghe.
+Sủa vài bài của [ARTIST].
+Tên 1 bài hát của [ARTIST].
+Danh sách các bài hát của [ARTIST].
+[ARTIST] hát những bài nào.
+Ê ê cho t bài của [ARTIST] đi.
+Hãy ví dụ một bài của [ARTIST].
+Hãy ví dụ một số bài hát của [ARTIST] đi.
+Liệt kê các bài hát của [ARTIST] cho t xem.
+Gợi ý t một số bài hát của [ARTIST].
+Gợi ý t 1 bài hát hay của [ARTIST].
+Dm cho bố m 1 bài của [ARTIST].
+Danh sách các bài của [ARTIST].
+Cho mình nghe bài của [ARTIST] hay hay di.
+Mở mình 1 bài của [ARTIST] đi nào.
+Ví dụ 1 bài của [ARTIST] đi ạ.
+Cho mình xin mấy bài của [ARTIST] với ạ.
+Alo đưa tao mấy bài của [ARTIST] đi.
 cho tui bài của [ARTIST] đi.
 có bài nào của [ARTIST] hay hay không?
 bạn ơi cho mình vài bài của [ARTIST] đi.
@@ -82,41 +82,41 @@ này, cho tui bài của [ARTIST] với.
 examples về nhạc of [ARTIST].
 một số bài hát thú vị của [ARTIST].
 một số bài hát thú vị của [ARTIST].
-ví dụ vài bài của [ARTIST]
+ví dụ vài bài của [ARTIST].
 ví dụ vài bài của [ARTIST] thú vị đi bot ơi.
-bot ơi cho tui mấy bài của [ARTIST] nghe coi
-give me an example song of [ARTIST]
-chỉ t mấy bài của [ARTIST] đi bot
-cho tôi môt bài của [ARTIST]
-e hãy cho tôi vài bài của [ARTIST] di
-chỉ tao mấy bài của [ARTIST] đi bot
-hmmm, cho mình 1 bài của ca sĩ [ARTIST] đi bot
-bạn ơi, cho mình nghe 1 bài của [ARTIST] đi bạn
-hãy cho em một số bài hát hay hay của [ARTIST] đi ạ
-sư phụ, cho đệ tử xin một số bài hát do [ARTIST] trình bày đi sư phụ
-onii chan, cho e bài hát do [ARTIST] hát đi onii
-mày ơi, cho tao vài bài do [ARTIST] biểu diễn nghe với coi
-dcm cho t mấy bài của [ARTIST] nghe coi
-đưa cho t danh sách các bài các bài hát của [ARTIST] coi
-[ARTIST] có bài nào hay
-hãy cho tui một bài hát siu hay của ca sĩ [ARTIST] xem nào
-này, đưa 1 bài của ca sĩ xem nào
-nhóm [ARTIST] có bài nào nghe ổn ko
-nè bot, cho bài của [ARTIST] nghe
-sủa vài bài của [ARTIST]
-tên 1 bài hát của [ARTIST]
-danh sách các bài hát của [ARTIST]
-[ARTIST] hát những bài nào
-ê ê cho t bài của [ARTIST] đi
-hãy ví dụ một bài của [ARTIST]
-hãy ví dụ một số bài hát của [ARTIST] đi
-liệt kê các bài hát của [ARTIST] cho t xem
-gợi ý t một số bài hát của [ARTIST]
-gợi ý t 1 bài hát hay của [ARTIST]
-dm cho bố m 1 bài của [ARTIST]
-danh sách các bài của [ARTIST]
-cho mình nghe bài của [ARTIST] hay hay di
-mở mình 1 bài của [ARTIST] đi nào
-ví dụ 1 bài của [ARTIST] đi ạ
-cho mình xin mấy bài của [ARTIST] với ạ
-alo đưa tao mấy bài của [ARTIST] đi
+bot ơi cho tui mấy bài của [ARTIST] nghe coi.
+give me an example song of [ARTIST].
+chỉ t mấy bài của [ARTIST] đi bot.
+cho tôi môt bài của [ARTIST].
+e hãy cho tôi vài bài của [ARTIST] di.
+chỉ tao mấy bài của [ARTIST] đi bot.
+hmmm, cho mình 1 bài của ca sĩ [ARTIST] đi bot.
+bạn ơi, cho mình nghe 1 bài của [ARTIST] đi bạn.
+hãy cho em một số bài hát hay hay của [ARTIST] đi ạ.
+sư phụ, cho đệ tử xin một số bài hát do [ARTIST] trình bày đi sư phụ.
+onii chan, cho e bài hát do [ARTIST] hát đi onii.
+mày ơi, cho tao vài bài do [ARTIST] biểu diễn nghe với coi.
+dcm cho t mấy bài của [ARTIST] nghe coi.
+đưa cho t danh sách các bài các bài hát của [ARTIST] coi.
+[ARTIST] có bài nào hay.
+hãy cho tui một bài hát siu hay của ca sĩ [ARTIST] xem nào.
+này, đưa 1 bài của ca sĩ xem nào.
+nhóm [ARTIST] có bài nào nghe ổn ko.
+nè bot, cho bài của [ARTIST] nghe.
+sủa vài bài của [ARTIST].
+tên 1 bài hát của [ARTIST].
+danh sách các bài hát của [ARTIST].
+[ARTIST] hát những bài nào.
+ê ê cho t bài của [ARTIST] đi.
+hãy ví dụ một bài của [ARTIST].
+hãy ví dụ một số bài hát của [ARTIST] đi.
+liệt kê các bài hát của [ARTIST] cho t xem.
+gợi ý t một số bài hát của [ARTIST].
+gợi ý t 1 bài hát hay của [ARTIST].
+dm cho bố m 1 bài của [ARTIST].
+danh sách các bài của [ARTIST].
+cho mình nghe bài của [ARTIST] hay hay di.
+mở mình 1 bài của [ARTIST] đi nào.
+ví dụ 1 bài của [ARTIST] đi ạ.
+cho mình xin mấy bài của [ARTIST] với ạ.
+alo đưa tao mấy bài của [ARTIST] đi.
