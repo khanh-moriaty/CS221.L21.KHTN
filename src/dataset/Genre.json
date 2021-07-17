@@ -1,1 +1,132 @@
-{"KPOP": ["K-POP", "K-Pop", "K-pop", "k-pop", "k-POP", "k-Pop", "k-pop", "KPOP", "KPop", "Kpop", "kPOP", "kPop", "kpop"], "EDM": ["edm", "Edm", "EDM"], "Hiphop": ["hiphop", "HIPHOP", "Hiphop", "HipHop", "hip-hop", "Hip-Hop", "HIP-HOP", "Hip-hop"], "VPOP": ["V-POP", "V-Pop", "V-pop", "v-pop", "v-POP", "v-Pop", "v-pop", "VPOP", "VPop", "Vpop", "vPOP", "vPop", "vpop"], "Chill": ["CHILL", "chill", "Chill"], "Anime": ["Anime", "anime", "ANIME"], "CPOP": ["C-POP", "C-Pop", "C-pop", "c-pop", "c-POP", "c-Pop", "c-pop", "CPOP", "CPop", "Cpop", "cPOP", "cPop", "cpop"], "Indie": ["INDIE", "Indie"], "Rap": ["rap", "Rap", "RAP"], "Dance": ["dance", "DANCE", "Dance"], "UsUK POP": ["USUK", "UsUk", "Usuk", "usuk", "Us-Uk", "US-UK", "us-uk", "Us-uk"], "Jazz": ["jazz", "JAZZ", "Jazz"], "Rock": ["Rock", "rock", "ROCK"], "Ballad": ["Ballad", "ballad", "BALLAD"]}
+{
+  "KPOP": [
+    "K-POP",
+    "K-Pop",
+    "K-pop",
+    "k-pop",
+    "k-pop",
+    "KPOP",
+    "KPop",
+    "Kpop",
+    "tiếng Hàn",
+    "tiếng hàn",
+    "Nhạc Hàn",
+    "nhạc hàn",
+    "Hàn Quốc",
+    "hàn quốc",
+    "hàn xẻng",
+    "nhạc Hàn",
+    "kpop"
+  ],
+  "EDM": [
+    "edm",
+    "Edm",
+    "EDM"
+  ],
+  "Hiphop": [
+    "hiphop",
+    "HIPHOP",
+    "Hiphop",
+    "HipHop",
+    "hip-hop",
+    "Hip-Hop",
+    "HIP-HOP",
+    "Hip-hop"
+  ],
+  "VPOP": [
+    "nhạc Việt Nam",
+    "tiếng việt",
+    "tiếng Việt",
+    "tiếng Việt Nam",
+    "Việt nam",
+    "Việt Nam",
+    "việt nam",
+    "nhạc Việt",
+    "Nhạc Việt",
+    "nhạc trẻ",
+    "V-POP",
+    "V-Pop",
+    "V-pop",
+    "v-pop",
+    "v-pop",
+    "VPOP",
+    "VPop",
+    "Vpop",
+    "vpop"
+  ],
+  "Chill": [
+    "CHILL",
+    "chill",
+    "Chill"
+  ],
+  "Anime": [
+    "Anime",
+    "anime",
+    "ANIME"
+  ],
+  "CPOP": [
+    "nhạc Tàu",
+    "nhạc Trung",
+    "nhạc trung",
+    "Trung Quốc",
+    "Trung quốc",
+    "Tiếng Trung",
+    "tiếng Trung",
+    "nhạc hoa",
+    "nhạc Hoa",
+    "trung quốc",
+    "C-POP",
+    "C-Pop",
+    "C-pop",
+    "c-pop",
+    "c-pop",
+    "CPOP",
+    "CPop",
+    "Cpop",
+    "cpop"
+  ],
+  "Indie": [
+    "INDIE",
+    "Indie"
+  ],
+  "Rap": [
+    "rap",
+    "Rap",
+    "RAP"
+  ],
+  "Dance": [
+    "dance",
+    "DANCE",
+    "Dance"
+  ],
+  "UsUK POP": [
+    "Âu Mỹ",
+    "âu mỹ",
+    "Âu mỹ",
+    "Nhạc Âu Mỹ",
+    "nhạc Âu Mỹ",
+    "USUK",
+    "UsUk",
+    "Usuk",
+    "usuk",
+    "Us-Uk",
+    "US-UK",
+    "us-uk",
+    "Us-uk"
+  ],
+  "Jazz": [
+    "jazz",
+    "JAZZ",
+    "Jazz"
+  ],
+  "Rock": [
+    "Rock",
+    "rock",
+    "ROCK"
+  ],
+  "Ballad": [
+    "Ballad",
+    "ballad",
+    "BALLAD"
+  ]
+}
