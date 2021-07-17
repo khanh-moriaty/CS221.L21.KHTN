@@ -1,5 +1,5 @@
 Cho tui bài [GENRE] [MOOD] đi.
-Có bài [GENRE] [MOOD] nào hay hay không?
+Có bài [GENRE] [MOOD] nào hay hay không.
 Bạn ơi cho mình vài bài [GENRE] [MOOD] đi.
 Bot ơi gợi ý nhạc [MOOD] thể loại [GENRE] cho mình đi.
 Bot ơi xin bài [GENRE] [MOOD].
@@ -10,7 +10,7 @@ có bài [GENRE] nào [MOOD] mà hay không.
 Bài nào [GENRE] [MOOD] hay vậy.
 Xin bài [GENRE] [MOOD] nghe coi.
 Cho tui bài [GENRE] [MOOD] nào đỉnh cao đi.
-Cho mình hỏi có bài [GENRE] [MOOD] nào hay không?
+Cho mình hỏi có bài [GENRE] [MOOD] nào hay không.
 Ê chỉ tôi bài [GENRE] hợp tâm trạng [MOOD] coi.
 Tâm trạng [MOOD] có bài [GENRE] nào hay mày.
 Tâm trạng [MOOD] có bài [GENRE] nào nghe hay không bot.
