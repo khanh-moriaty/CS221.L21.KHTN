@@ -64,7 +64,7 @@ def frontend_message():
             prevGenre = ""
         
         # Process user input
-        response, intent, artist, mood, genre = nlu.get_response(context=(prevArtist, prevMood, prevGenre), sentence=message)
+        response, link, ner, pos, intent, artist, mood, genre = nlu.get_response(context=(prevArtist, prevMood, prevGenre), sentence=message)
         
         response_time = int(time.time())
         response = {
@@ -74,6 +74,8 @@ def frontend_message():
             'artist': artist,
             'mood': mood,
             'genre': genre,
+            'ner': ner,
+            'pos': pos,
             'messages': [
                 {
                     'username': 'YOU',
@@ -84,6 +86,7 @@ def frontend_message():
                     'username': 'CHATBOT',
                     'timestamp': response_time,
                     'message': response,
+                    'url': link,
                 },
             ],
         }
@@ -98,6 +101,8 @@ def frontend_message():
             'artist': '',
             'mood': '',
             'genre': '',
+            'ner': [],
+            'pos': [],
             'error': traceback.format_exc(),
             'messages': [
                 {

@@ -88,19 +88,19 @@ class NLU:
             if intent==1 and context!=("","",""):
                 artist, mood, genre = context
 
-
+            link = ""
             if genre != "":
                 if artist != "":
                     try:
                         a = self.list_songs_2[self.list_songs_2["artist"].str.contains(artist)]
                         link = a["link"][random.choice(a[a["genre"].str.contains(genre)].index)]
-                        ans = random.choice(self.ans_findsong) + " " + link
+                        ans = random.choice(self.ans_findsong)
                     except:
                         ans = random.choice(self.ans_notfindsong)
                 else:
                     try:
                         link = self.list_songs_2["link"][random.choice(self.list_songs_2[self.list_songs_2["genre"].str.contains(genre)].index)]
-                        ans = random.choice(self.ans_findsong) + " " + link
+                        ans = random.choice(self.ans_findsong)
                     except:
                         ans = random.choice(self.ans_notfindsong)
             else:
@@ -109,24 +109,23 @@ class NLU:
                         try:
                             a = self.list_songs_1[self.list_songs_1["singer"].str.contains(artist)]
                             link = a["link"][random.choice(a[a["mood_binary"]==mood].index)]
-                            ans = random.choice(self.ans_findsong) + " " + link
+                            ans = random.choice(self.ans_findsong)
                         except:
                             ans = random.choice(self.ans_notfindsong)
                     else:
                         try:
                             link = self.list_songs_1["link"][random.choice(self.list_songs_1[self.list_songs_1["mood_binary"]==mood].index)]
-                            ans = random.choice(self.ans_findsong) + " " + link
+                            ans = random.choice(self.ans_findsong)
                         except:
                             ans = random.choice(self.ans_notfindsong)
                 else:
                     if artist != "":
                         try:
                             link = self.list_songs_1["link"][random.choice(self.list_songs_1[self.list_songs_1["singer"].str.contains(artist)].index)]
-                            ans = random.choice(self.ans_findsong) + " " + link
+                            ans = random.choice(self.ans_findsong)
                         except:
                             ans = random.choice(self.ans_notfindsong)
-        return "Intent: {}     NER: {}     POS: {}     artist: {}     mood: {}     genre: {}     ans: {}".format(intent, ner_tag, pos_tag, artist, mood, genre, ans),\
-            intent, artist, mood, genre
+        return ans, link, ner_tag, pos_tag, intent, artist, mood, genre
         
     def load_model(self):
         '''
