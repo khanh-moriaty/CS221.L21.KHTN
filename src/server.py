@@ -1,6 +1,7 @@
 from flask import Flask, request
 from flask_cors import CORS
 import time
+import secrets
 
 app = Flask(__name__)
 CORS(app)
@@ -17,7 +18,7 @@ def frontend_message():
     
     if request.method == "GET":
         return {
-            'token': "test",
+            'token': secrets.token_hex(),
             'messages': [
                 {
                     'username': 'CHATBOT',
