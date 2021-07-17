@@ -1,1 +1,1 @@
-Hello, chào mừng bạn đến với Chatbot gợi ý nhạc thông minh. Với thông tin ca sĩ, thể loại, tâm trạng, mình sẽ tìm ra bài hát phù hợp cho bạn nè!!
+Hế lô! Xin tự giới thiệu mình là Music-Bot. Cho mình biết tên của một ca sĩ, hoặc tên thể loại nhạc, hoặc tâm trạng hiện tại của bạn, mình sẽ giúp bạn tìm ra một bài hát phù hợp!

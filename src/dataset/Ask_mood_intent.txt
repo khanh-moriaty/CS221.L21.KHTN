@@ -1,3 +1,12 @@
+Tui đang cảm thấy [MOOD] quá bot ơi.
+Hiện tại tui đang cảm thấy rất [MOOD].
+Cảm thấy [MOOD] thì nghe nhạc gì giờ?
+Tôi đang thấy hơi [MOOD], có nhạc gì để nghe không?
+Có bài gì hợp với tâm trạng [MOOD] không?
+T đang cảm thấy [MOOD], có bài gì nghe không?
+T đang thấy [MOOD], có bài nào để nghe không?
+Gợi ý cho tui một bài [MOOD] nhé!
+Gợi ý cho t một bài [MOOD] đi.
 Cho tui bài nào [MOOD] đi.
 Có bài [MOOD] nào hay hay không?
 Bạn ơi cho mình vài bài [MOOD] đi.
