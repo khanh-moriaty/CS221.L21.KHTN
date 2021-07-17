@@ -40,7 +40,7 @@ class IntentClassifier:
         K = np.concatenate((np.ones((1, len(test_array))), temp), axis = 0)
         T = pred(self.model, K)
         tem = np.argmax(T, axis = 0)
-        return tem[0]
+        return int(tem[0])
         
     def load_intent_model(self):
         #dowload here https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.vi.300.bin.gz
