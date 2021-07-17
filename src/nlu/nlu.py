@@ -100,6 +100,7 @@ class NLU:
                             cout+=1
                         if cout==10:
                             ans = random.choice(self.ans_notfindsong)
+                            link = ""
                         else:
                             ans = random.choice(self.ans_findsong) + " " + link
                     except:
@@ -113,6 +114,7 @@ class NLU:
                             cout+=1
                         if cout==10:
                             ans = random.choice(self.ans_notfindsong)
+                            link = ""
                         else:
                             ans = random.choice(self.ans_findsong) + " " + link
                     except:
@@ -128,6 +130,7 @@ class NLU:
                                 cout+=1
                             if cout==10:
                                 ans = random.choice(self.ans_notfindsong)
+                                link = ""
                             else:
                                 ans = random.choice(self.ans_findsong) + " " + link
                         except:
@@ -140,6 +143,7 @@ class NLU:
                                 cout+=1
                             if cout==10:
                                 ans = random.choice(self.ans_notfindsong)
+                                link = ""
                             else:
                                 ans = random.choice(self.ans_findsong) + " " + link
                         except:
@@ -153,6 +157,7 @@ class NLU:
                                 cout+=1
                             if cout==10:
                                 ans = random.choice(self.ans_notfindsong)
+                                link = ""
                             else:
                                 ans = random.choice(self.ans_findsong) + " " + link
                         except:
