@@ -1,5 +1,5 @@
 Cho tui bài của [ARTIST] đi.
-Có bài nào của [ARTIST] hay hay không?
+Có bài nào của [ARTIST] hay hay không.
 Bạn ơi cho mình vài bài của [ARTIST] đi.
 Bot ơi gợi ý nhạc [ARTIST] cho mình đi.
 Bot ơi xin bài của [ARTIST].
@@ -8,7 +8,7 @@ Cho tao bài của [ARTIST] nghe coi.
 Bài của [ARTIST] có bài nào hay vậy.
 Xin bài của [ARTIST] nghe coi.
 Cho tui bài hát của [ARTIST] đỉnh cao đi.
-Cho mình hỏi có bài nào của [ARTIST] hay ko?
+Cho mình hỏi có bài nào của [ARTIST] hay ko.
 Ê chỉ tao bài hát nào của [ARTIST] hợp lý coi.
 [ARTIST] có bài nào hay mày.
 [ARTIST] có bài nào nghe hay ko bot.
@@ -60,7 +60,7 @@ Ví dụ 1 bài của [ARTIST] đi ạ.
 Cho mình xin mấy bài của [ARTIST] với ạ.
 Alo đưa tao mấy bài của [ARTIST] đi.
 cho tui bài của [ARTIST] đi.
-có bài nào của [ARTIST] hay hay không?
+có bài nào của [ARTIST] hay hay không.
 bạn ơi cho mình vài bài của [ARTIST] đi.
 bot ơi gợi ý nhạc [ARTIST] cho mình đi.
 bot ơi xin bài của [ARTIST].
@@ -69,7 +69,7 @@ cho tao bài của [ARTIST] nghe coi.
 bài của [ARTIST] có bài nào hay vậy.
 xin bài của [ARTIST] nghe coi.
 cho tui bài hát của [ARTIST] đỉnh cao đi.
-cho mình hỏi có bài nào của [ARTIST] hay ko?
+cho mình hỏi có bài nào của [ARTIST] hay ko.
 ê chỉ tao bài hát nào của [ARTIST] hợp lý coi.
 [ARTIST] có bài nào hay mày.
 [ARTIST] có bài nào nghe hay ko bot.
