@@ -34,13 +34,12 @@ services:
 
     backend:
         build: ./src/
-        env_file: ./config/.env
+        environment:
+            - MONGO_INITDB_ROOT_USERNAME=${MONGO_INITDB_ROOT_USERNAME}
+            - MONGO_INITDB_ROOT_PASSWORD=${MONGO_INITDB_ROOT_PASSWORD}
 
     db:
-        image: postgres:latest
-        volumes:
-            - ./postgresql/data:/var/lib/postgresql/data:z
+        image: mongo
         environment:
-            - POSTGRES_DB=${POSTGRES_DB}
-            - POSTGRES_USER=${POSTGRES_USER}
-            - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+            - MONGO_INITDB_ROOT_USERNAME=${MONGO_INITDB_ROOT_USERNAME}
+            - MONGO_INITDB_ROOT_PASSWORD=${MONGO_INITDB_ROOT_PASSWORD}
