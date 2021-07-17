@@ -1,5 +1,5 @@
 Cho tui bài [GENRE] đi.
-Có bài [GENRE] nào hay hay không?
+Có bài [GENRE] nào hay hay không.
 Bạn ơi cho mình vài bài [GENRE] đi.
 Bot ơi gợi ý nhạc [GENRE] cho mình đi.
 Bot ơi xin bài [GENRE].
@@ -8,7 +8,7 @@ Cho tao bài [GENRE] nghe coi.
 Bài [GENRE] nào hay z.
 Xin bài [GENRE] nghe coi.
 Cho tui bài [GENRE] đỉnh cao đi.
-Cho mình hỏi có bài [GENRE] nào hay ko?
+Cho mình hỏi có bài [GENRE] nào hay ko.
 Ê chỉ tao bài thể loại [GENRE] hợp lý coi.
 Thể loại [GENRE] có bài nào hay mày.
 Thể loại [GENRE] có bài nào nghe hay ko bot.
@@ -59,7 +59,7 @@ Mở mình một bài [GENRE] đi nào.
 Cho mình xin mấy bài [GENRE] với ạ.
 Alo đưa mình mấy bài [GENRE] đi.
 cho tui bài [GENRE] đi.
-có bài [GENRE] nào hay hay không?
+có bài [GENRE] nào hay hay không.
 bạn ơi cho mình vài bài [GENRE] đi.
 bot ơi gợi ý nhạc [GENRE] cho mình đi.
 bot ơi xin bài [GENRE].
@@ -68,7 +68,7 @@ cho tao bài [GENRE] nghe coi.
 bài [GENRE] nào hay z.
 xin bài [GENRE] nghe coi.
 cho tui bài [GENRE] đỉnh cao đi.
-cho mình hỏi có bài [GENRE] nào hay ko?
+cho mình hỏi có bài [GENRE] nào hay ko.
 ê chỉ tao bài thể loại [GENRE] hợp lý coi.
 thể loại [GENRE] có bài nào hay mày.
 thể loại [GENRE] có bài nào nghe hay ko bot.
