@@ -139,5 +139,5 @@ class NLU:
             self.genres = json.load(f)
         with open('/src/dataset/mood.json') as f:
             self.moods = json.load(f)
-        self.list_songs_1 = pd.read_csv('/src/dataset/nhaccuatui.csv', usecols=['singer','link','mood_binary'])
+        self.list_songs_1 = pd.read_csv('/src/dataset/nhaccuatui_v2.csv', usecols=['singer','link','mood_binary'])
         self.list_songs_2 = pd.read_csv('/src/dataset/genre_song.csv', usecols=['artist','genre','link'])
