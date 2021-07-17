@@ -77,7 +77,8 @@ class NLU:
                 genre = str(res[0])
             
 
-        return "Intent: {}     NER: {}     POS: {}     {}     {}     {}".format(intent, ner_tag, pos_tag, artist, mood, genre)
+        return "Intent: {}     NER: {}     POS: {}     {}     {}     {}".format(intent, ner_tag, pos_tag, artist, mood, genre), \
+            intent, artist, mood, genre
         
     def load_model(self):
         '''

@@ -14,4 +14,4 @@ COPY    ./ src/
 WORKDIR src/
 
 # CMD     flask run -h 0.0.0.0
-CMD     gunicorn --bind 0.0.0.0:7777 -k gevent --worker-connections 1000 server:app
+CMD     gunicorn --bind 0.0.0.0:7777 -k gevent --worker-connections 1000 --access-logfile '-' --error-logfile '-' --capture-output server:app
