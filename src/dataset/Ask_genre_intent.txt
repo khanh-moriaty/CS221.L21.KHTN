@@ -1,5 +1,5 @@
 Cho tui bài [GENRE] đi.
-Có bài [GENRE] nào hay hay không?
+Có bài [GENRE] nào hay hay không.
 Bạn ơi cho mình vài bài [GENRE] đi.
 Bot ơi gợi ý nhạc [GENRE] cho mình đi.
 Bot ơi xin bài [GENRE].
@@ -8,7 +8,7 @@ Cho tao bài [GENRE] nghe coi.
 Bài [GENRE] nào hay z.
 Xin bài [GENRE] nghe coi.
 Cho tui bài [GENRE] đỉnh cao đi.
-Cho mình hỏi có bài [GENRE] nào hay ko?
+Cho mình hỏi có bài [GENRE] nào hay ko.
 Ê chỉ tao bài thể loại [GENRE] hợp lý coi.
 Thể loại [GENRE] có bài nào hay mày.
 Thể loại [GENRE] có bài nào nghe hay ko bot.
@@ -23,43 +23,43 @@ Một số bài hát thú vị về [GENRE].
 Một số bài hát thú vị thuộc thể loại [GENRE].
 Ví dụ vài bài [GENRE].
 Ví dụ vài bài [GENRE] thú vị đi bot ơi.
-Bot ơi cho tui mấy bài [GENRE] nghe coi
-Give me an example song of [GENRE]
-Cho tôi một bài [GENRE]
-Ê hãy cho tôi một bài [GENRE] di
-Chỉ t mấy bài về [GENRE] đi bot
-Hmmm, cho mình 1 bài [GENRE] đi bot
-Bạn ơi, cho mình nghe 1 bài [GENRE] đi bạn
-Hãy cho em một số bài hát hay hay thuộc thể loại [GENRE] đi ạ
-Sư phụ, cho đệ tử xin một số bài hát [GENRE] đi sư phụ
-Onii chan, cho e bài [GENRE] đi onii
-Mày ơi, cho tao vài bài [GENRE] nghe với coi
-Cho t bài [GENRE] nghe coi
-Đưa cho tui danh sách các bài [GENRE] coi
-[GENRE] có bài nào hay
-Hãy cho tui một bài hát siu hay thuộc thể loại [GENRE] xem nào
-Này, đưa 1 bài [GENRE] xem nào
+Bot ơi cho tui mấy bài [GENRE] nghe coi.
+Give me an example song of [GENRE].
+Cho tôi một bài [GENRE].
+Ê hãy cho tôi một bài [GENRE] di.
+Chỉ t mấy bài về [GENRE] đi bot.
+Hmmm, cho mình 1 bài [GENRE] đi bot.
+Bạn ơi, cho mình nghe 1 bài [GENRE] đi bạn.
+Hãy cho em một số bài hát hay hay thuộc thể loại [GENRE] đi ạ.
+Sư phụ, cho đệ tử xin một số bài hát [GENRE] đi sư phụ.
+Onii chan, cho e bài [GENRE] đi onii.
+Mày ơi, cho tao vài bài [GENRE] nghe với coi.
+Cho t bài [GENRE] nghe coi.
+Đưa cho tui danh sách các bài [GENRE] coi.
+[GENRE] có bài nào hay.
+Hãy cho tui một bài hát siu hay thuộc thể loại [GENRE] xem nào.
+Này, đưa 1 bài [GENRE] xem nào.
 Eg về [GENRE].
-Nè bot, cho bài [GENRE] nghe
-Sủa vài bài [GENRE] nghe coi
-Bạn ơi mở cho mình bài [GENRE] nghe với
-Cho tôi biết một số bài [GENRE] nổi tiếng
-Nói tui nghe 1 bài [GENRE] nào
-Chỉ tôi vài bài [GENRE] nào
-1 bài [GENRE] đi nào
-Cho mình tên bài hát thể loại [GENRE]
-Tên 1 bài thuộc thể loại [GENRE]
-1 bài [GENRE]
-Chỉ tớ một bài [GENRE]
-Thể loại [GENRE] có bài nào hay vậy bot
-Một số bài hát thuộc thể loại [GENRE] đi bot ngu
-Danh sách các bài hát thuộc thể loại [GENRE]
-Cho mình nghe bài [GENRE] hay hay đi
-Mở mình một bài [GENRE] đi nào
-Cho mình xin mấy bài [GENRE] với ạ
-Alo đưa mình mấy bài [GENRE] đi
+Nè bot, cho bài [GENRE] nghe.
+Sủa vài bài [GENRE] nghe coi.
+Bạn ơi mở cho mình bài [GENRE] nghe với.
+Cho tôi biết một số bài [GENRE] nổi tiếng.
+Nói tui nghe 1 bài [GENRE] nào.
+Chỉ tôi vài bài [GENRE] nào.
+1 bài [GENRE] đi nào.
+Cho mình tên bài hát thể loại [GENRE].
+Tên 1 bài thuộc thể loại [GENRE].
+1 bài [GENRE].
+Chỉ tớ một bài [GENRE].
+Thể loại [GENRE] có bài nào hay vậy bot.
+Một số bài hát thuộc thể loại [GENRE] đi bot ngu.
+Danh sách các bài hát thuộc thể loại [GENRE].
+Cho mình nghe bài [GENRE] hay hay đi.
+Mở mình một bài [GENRE] đi nào.
+Cho mình xin mấy bài [GENRE] với ạ.
+Alo đưa mình mấy bài [GENRE] đi.
 cho tui bài [GENRE] đi.
-có bài [GENRE] nào hay hay không?
+có bài [GENRE] nào hay hay không.
 bạn ơi cho mình vài bài [GENRE] đi.
 bot ơi gợi ý nhạc [GENRE] cho mình đi.
 bot ơi xin bài [GENRE].
@@ -68,7 +68,7 @@ cho tao bài [GENRE] nghe coi.
 bài [GENRE] nào hay z.
 xin bài [GENRE] nghe coi.
 cho tui bài [GENRE] đỉnh cao đi.
-cho mình hỏi có bài [GENRE] nào hay ko?
+cho mình hỏi có bài [GENRE] nào hay ko.
 ê chỉ tao bài thể loại [GENRE] hợp lý coi.
 thể loại [GENRE] có bài nào hay mày.
 thể loại [GENRE] có bài nào nghe hay ko bot.
@@ -83,38 +83,38 @@ một số bài hát thú vị về [GENRE].
 một số bài hát thú vị thuộc thể loại [GENRE].
 ví dụ vài bài [GENRE].
 ví dụ vài bài [GENRE] thú vị đi bot ơi.
-bot ơi cho tui mấy bài [GENRE] nghe coi
-give me an example song of [GENRE]
-cho tôi một bài [GENRE]
-ê hãy cho tôi một bài [GENRE] di
-chỉ t mấy bài về [GENRE] đi bot
-hmmm, cho mình 1 bài [GENRE] đi bot
-bạn ơi, cho mình nghe 1 bài [GENRE] đi bạn
-hãy cho em một số bài hát hay hay thuộc thể loại [GENRE] đi ạ
-sư phụ, cho đệ tử xin một số bài hát [GENRE] đi sư phụ
-onii chan, cho e bài [GENRE] đi onii
-mày ơi, cho tao vài bài [GENRE] nghe với coi
-cho t bài [GENRE] nghe coi
-đưa cho tui danh sách các bài [GENRE] coi
-[GENRE] có bài nào hay
-hãy cho tui một bài hát siu hay thuộc thể loại [GENRE] xem nào
-này, đưa 1 bài [GENRE] xem nào
+bot ơi cho tui mấy bài [GENRE] nghe coi.
+give me an example song of [GENRE].
+cho tôi một bài [GENRE].
+ê hãy cho tôi một bài [GENRE] di.
+chỉ t mấy bài về [GENRE] đi bot.
+hmmm, cho mình 1 bài [GENRE] đi bot.
+bạn ơi, cho mình nghe 1 bài [GENRE] đi bạn.
+hãy cho em một số bài hát hay hay thuộc thể loại [GENRE] đi ạ.
+sư phụ, cho đệ tử xin một số bài hát [GENRE] đi sư phụ.
+onii chan, cho e bài [GENRE] đi onii.
+mày ơi, cho tao vài bài [GENRE] nghe với coi.
+cho t bài [GENRE] nghe coi.
+đưa cho tui danh sách các bài [GENRE] coi.
+[GENRE] có bài nào hay.
+hãy cho tui một bài hát siu hay thuộc thể loại [GENRE] xem nào.
+này, đưa 1 bài [GENRE] xem nào.
 eg về [GENRE].
-nè bot, cho bài [GENRE] nghe
-sủa vài bài [GENRE] nghe coi
-bạn ơi mở cho mình bài [GENRE] nghe với
-cho tôi biết một số bài [GENRE] nổi tiếng
-nói tui nghe 1 bài [GENRE] nào
-chỉ tôi vài bài [GENRE] nào
-1 bài [GENRE] đi nào
-cho mình tên bài hát thể loại [GENRE]
-tên 1 bài thuộc thể loại [GENRE]
-1 bài [GENRE]
-chỉ tớ một bài [GENRE]
-thể loại [GENRE] có bài nào hay vậy bot
-một số bài hát thuộc thể loại [GENRE] đi bot ngu
-danh sách các bài hát thuộc thể loại [GENRE]
-cho mình nghe bài [GENRE] hay hay đi
-mở mình một bài [GENRE] đi nào
-cho mình xin mấy bài [GENRE] với ạ
-alo đưa mình mấy bài [GENRE] đi
+nè bot, cho bài [GENRE] nghe.
+sủa vài bài [GENRE] nghe coi.
+bạn ơi mở cho mình bài [GENRE] nghe với.
+cho tôi biết một số bài [GENRE] nổi tiếng.
+nói tui nghe 1 bài [GENRE] nào.
+chỉ tôi vài bài [GENRE] nào.
+1 bài [GENRE] đi nào.
+cho mình tên bài hát thể loại [GENRE].
+tên 1 bài thuộc thể loại [GENRE].
+1 bài [GENRE].
+chỉ tớ một bài [GENRE].
+thể loại [GENRE] có bài nào hay vậy bot.
+một số bài hát thuộc thể loại [GENRE] đi bot ngu.
+danh sách các bài hát thuộc thể loại [GENRE].
+cho mình nghe bài [GENRE] hay hay đi.
+mở mình một bài [GENRE] đi nào.
+cho mình xin mấy bài [GENRE] với ạ.
+alo đưa mình mấy bài [GENRE] đi.
