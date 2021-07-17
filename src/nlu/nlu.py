@@ -71,18 +71,44 @@ class NLU:
             
             if mood != "":
                 res = min(self.moods.items(), key=lambda m: editdistance.eval(mood, min(m[1], key=lambda x: editdistance.eval(mood, x))))
-                mood = int(res == "buồn")
+                mood = int(res[0] == "buồn")
 
             if genre != "":
                 res = min(self.genres.items(), key=lambda g: editdistance.eval(genre, min(g[1], key=lambda x: editdistance.eval(genre, x))))
                 genre = str(res[0])
+
+            print("Intent: {}     NER: {}     POS: {}     {}     {}     {}".format(intent, ner_tag, pos_tag, artist, mood, genre))
+            if genre != "":
                 if artist != "":
-                    a = self.list_songs_2[self.list_songs_2["artist"]==artist]
-                    link = a["link"][random.choice(a[a["genre"]==genre].index)]
-                    return link
-
-
-              
+                    try:
+                        a = self.list_songs_2[self.list_songs_2["artist"].str.contains(artist)]
+                        link = a["link"][random.choice(a[a["genre"].str.contains(genre)].index)]
+                        return link
+                    except:
+                        print("not found")
+                        return 0
+                else:
+                    try:
+                        return self.list_songs_2["link"][random.choice(self.list_songs_2[self.list_songs_2["genre"].str.contains(genre)].index)]
+                    except:
+                        print("not found")
+                        return 0
+            else:
+                if mood != "":
+                    if artist != "":
+                        try:
+                            a = self.list_songs_1[self.list_songs_1["singer"].str.contains(artist)]
+                            link = a["link"][random.choice(a[a["mood_binary"]==mood].index)]
+                            return link
+                        except:
+                            print("not found")
+                            return 0
+                    else:
+                        try:
+                            return self.list_songs_1["link"][random.choice(self.list_songs_1[self.list_songs_1["mood_binary"]==mood].index)]
+                        except:
+                            print("not found")
+                            return 0              
 
         return "Intent: {}     NER: {}     POS: {}     {}     {}     {}".format(intent, ner_tag, pos_tag, artist, mood, genre)
         
@@ -113,5 +139,5 @@ class NLU:
             self.genres = json.load(f)
         with open('/src/dataset/mood.json') as f:
             self.moods = json.load(f)
-        self.list_songs_1 = pd.read_csv('/src/dataset/nhaccuatui.csv', usecols=['singer','link','mood'])
+        self.list_songs_1 = pd.read_csv('/src/dataset/nhaccuatui.csv', usecols=['singer','link','mood_binary'])
         self.list_songs_2 = pd.read_csv('/src/dataset/genre_song.csv', usecols=['artist','genre','link'])
