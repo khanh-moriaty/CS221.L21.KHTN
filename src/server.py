@@ -58,13 +58,15 @@ def frontend_message():
             prevArtist = result[0]['artist']
             prevMood = result[0]['mood']
             prevGenre = result[0]['genre']
+            prevLink = result[0]['url']
         else:
             prevArtist = ""
             prevMood = ""
             prevGenre = ""
+            prevLink = ""
         
         # Process user input
-        response, link, ner, pos, intent, artist, mood, genre = nlu.get_response(context=(prevArtist, prevMood, prevGenre), sentence=message)
+        response, link, ner, pos, intent, artist, mood, genre = nlu.get_response(context=(prevArtist, prevMood, prevGenre, prevLink), sentence=message)
         
         response_time = int(time.time())
         response = {
@@ -76,6 +78,7 @@ def frontend_message():
             'genre': genre,
             'ner': ner,
             'pos': pos,
+            'url': link,
             'messages': [
                 {
                     'username': 'YOU',
@@ -103,6 +106,7 @@ def frontend_message():
             'genre': '',
             'ner': [],
             'pos': [],
+            'url': '',
             'error': traceback.format_exc(),
             'messages': [
                 {
