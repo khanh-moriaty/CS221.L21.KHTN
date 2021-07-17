@@ -44,8 +44,27 @@ def frontend_message():
         token = content['token']
         message = content['message']
         
+        # Get most recent message with NER and (intent==0)
+        result = list(db.data.find({
+            'token': token, 
+            'intent': 0, 
+            '$or': [
+                {'artist': {'$exists': True, '$ne': ""}},
+                {'mood': {'$exists': True, '$ne': ""}},
+                {'genre': {'$exists': True, '$ne': ""}},
+            ]
+        }, sort=[('timestamp', -1)]))
+        if result:
+            prevArtist = result[0]['artist']
+            prevMood = result[0]['mood']
+            prevGenre = result[0]['genre']
+        else:
+            prevArtist = ""
+            prevMood = ""
+            prevGenre = ""
+        
         # Process user input
-        response, intent, artist, mood, genre = nlu.get_response(context=[], sentence=message)
+        response, intent, artist, mood, genre = nlu.get_response(context=(prevArtist, prevMood, prevGenre), sentence=message)
         
         response_time = int(time.time())
         response = {

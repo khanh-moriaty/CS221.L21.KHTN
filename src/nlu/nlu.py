@@ -22,7 +22,7 @@ class NLU:
         Generate a response for chatbot based on a target sentence and a context.
         
         Input:
-            - context (list of str): a list of previous sentences in our conversation.
+            - context (tuple): previous values of artist, mood, and genre. Will be empty string ("", "", "") if none available.
             - sentence (str): the sentence/query that user sent to chatbot.
         
         Output (str): a proper response to the user's sentence.
@@ -71,7 +71,7 @@ class NLU:
             
             if mood != "":
                 res = min(self.moods.items(), key=lambda m: editdistance.eval(mood, min(m[1], key=lambda x: editdistance.eval(mood, x))))
-                mood = int(res == "buồn")
+                mood = int(res[0] == "buồn")
 
             if genre != "":
                 res = min(self.genres.items(), key=lambda g: editdistance.eval(genre, min(g[1], key=lambda x: editdistance.eval(genre, x))))
