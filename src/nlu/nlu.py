@@ -5,6 +5,7 @@ from .intent_classifier import IntentClassifier
 import random
 import editdistance
 import json
+import pandas as pd
 def load_ans(path):
     ans = []
     with open(path ,encoding="utf-8-sig") as _file:
@@ -32,7 +33,7 @@ class NLU:
         ner_tag = self.ner_model.predict_NER(sentence, pos_tag, self.embedding_model)[0]
         intent = self.intent_model.predict_intent(sentence, pos_tag, ner_tag, self.embedding_model)
         input = sentence.split()
-        artist = genre = mood = ''
+        artist = genre = mood = link = ''
         if intent==3:
             ans = random.choice(self.ans_greet)
         elif intent==2:
@@ -46,7 +47,7 @@ class NLU:
                     artist += str(input[i]).capitalize()
                     k = i+1
                     break
-            while ner_tag[k]=="I-A" and k<len(ner_tag):
+            while k<len(ner_tag) and ner_tag[k]=="I-A":
                 artist += " " + str(input[k]).capitalize()
                 k += 1
                 
@@ -60,7 +61,7 @@ class NLU:
                     mood += str(input[i])
                     k = i+1
                     break
-            while ner_tag[k]=="I-M" and k<len(ner_tag):
+            while k<len(ner_tag) and ner_tag[k]=="I-M":
                 mood += " " + str(input[k])
                 k += 1
 
@@ -75,7 +76,13 @@ class NLU:
             if genre != "":
                 res = min(self.genres.items(), key=lambda g: editdistance.eval(genre, min(g[1], key=lambda x: editdistance.eval(genre, x))))
                 genre = str(res[0])
-            
+                if artist != "":
+                    a = self.list_songs_2[self.list_songs_2["artist"]==artist]
+                    link = a["link"][random.choice(a[a["genre"]==genre].index)]
+                    return link
+
+
+              
 
         return "Intent: {}     NER: {}     POS: {}     {}     {}     {}".format(intent, ner_tag, pos_tag, artist, mood, genre)
         
@@ -106,3 +113,5 @@ class NLU:
             self.genres = json.load(f)
         with open('/src/dataset/mood.json') as f:
             self.moods = json.load(f)
+        self.list_songs_1 = pd.read_csv('/src/dataset/nhaccuatui.csv', usecols=['singer','link','mood'])
+        self.list_songs_2 = pd.read_csv('/src/dataset/genre_song.csv', usecols=['artist','genre','link'])
