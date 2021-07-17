@@ -28,30 +28,46 @@ def frontend_message():
             ],
         }
     
-    
-    content = request.get_json()
-    token = content['token']
-    message = content['message']
-    
-    # Process user input
-    response = nlu.get_response(context=[], sentence=message)
-    
-    response_time = int(time.time() * 1000)
-    return {
-        'token': token,
-        'messages': [
-            {
-                'username': 'YOU',
-                'timestamp': receive_time,
-                'message': message,
-            },
-            {
-                'username': 'CHATBOT',
-                'timestamp': response_time,
-                'message': response,
-            },
-        ],
-    }
+    try:
+        content = request.get_json()
+        token = content['token']
+        message = content['message']
+        
+        # Process user input
+        response = nlu.get_response(context=[], sentence=message)
+        
+        response_time = int(time.time() * 1000)
+        return {
+            'token': token,
+            'messages': [
+                {
+                    'username': 'YOU',
+                    'timestamp': receive_time,
+                    'message': message,
+                },
+                {
+                    'username': 'CHATBOT',
+                    'timestamp': response_time,
+                    'message': response,
+                },
+            ],
+        }
+    except:
+        return {
+            'token': token,
+            'messages': [
+                {
+                    'username': 'YOU',
+                    'timestamp': receive_time,
+                    'message': message,
+                },
+                {
+                    'username': 'CHATBOT',
+                    'timestamp': receive_time,
+                    'message': "Oops! Có lỗi xảy ra rồi :(",
+                },
+            ],
+        }
 
 @app.route("/webhook/message", methods=["GET", "POST"])
 def webhook_message():
