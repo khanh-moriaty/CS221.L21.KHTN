@@ -86,7 +86,7 @@ class NLU:
                 genre = str(res[0])
 
             if intent==1 and context!=("","",""):
-                artist, mood, genre = context
+                artist, mood, genre, link = context
 
             link = ""
             if genre != "":
