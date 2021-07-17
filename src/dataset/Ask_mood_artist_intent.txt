@@ -1,16 +1,16 @@
 Cho tui bài nào [MOOD] của [ARTIST] đi.
-Có bài [MOOD] nào của [ARTIST] hay hay không?
+Có bài [MOOD] nào của [ARTIST] hay hay không.
 Bạn ơi cho mình vài bài [MOOD] của [ARTIST] đi.
 Bot ơi gợi ý nhạc [MOOD] của [ARTIST] cho mình đi.
 Bot ơi xin bài [MOOD] của [ARTIST].
 Ê bot cho bài [MOOD] của [ARTIST] hay coi.
 Cho tôi bài [MOOD] của [ARTIST] nghe coi.
 Bài [MOOD] nào của [ARTIST] hay vậy.
-[ARTIST] có bài nào [MOOD] hay không
-Bài nào [MOOD] của [ARTIST] hay vậy
+[ARTIST] có bài nào [MOOD] hay không.
+Bài nào [MOOD] của [ARTIST] hay vậy.
 Xin bài [MOOD] của [ARTIST] nghe coi.
 Cho tui bài [MOOD] nào đỉnh cao của [ARTIST] đi.
-Cho mình hỏi [ARTIST] có bài [MOOD] nào hay không?
+Cho mình hỏi [ARTIST] có bài [MOOD] nào hay không.
 Ê chỉ tôi bài [MOOD] của [ARTIST] hợp lý coi.
 Tâm trạng [MOOD] có bài nào hay của [ARTIST] mày.
 Tâm trạng [MOOD] có bài nào của [ARTIST] nghe hay không bot.
