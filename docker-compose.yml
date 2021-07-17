@@ -2,11 +2,11 @@ version: '3.9'
 
 services:
 
-    ngrok:
-        image: wernight/ngrok:latest
-        environment:
-            - NGROK_AUTH=${NGROK_AUTH}
-            - NGROK_PORT=${NGROK_PORT}
+#    ngrok:
+#        image: wernight/ngrok:latest
+#        environment:
+#            - NGROK_AUTH=${NGROK_AUTH}
+#            - NGROK_PORT=${NGROK_PORT}
 
     nginx:
         image: nginx:latest        
@@ -15,16 +15,16 @@ services:
         ports:
             - "5678:80"
         depends_on:
-            - webhook
+#            - webhook
             - frontend
             - backend
             - db
 
-    webhook:
-        build: ./webhook
-        environment:
-            - WEBHOOK_PASSWORD=${WEBHOOK_PASSWORD}
-            - WEBHOOK_PAGE_TOKEN=${WEBHOOK_PAGE_TOKEN}
+#    webhook:
+#        build: ./webhook
+#        environment:
+#            - WEBHOOK_PASSWORD=${WEBHOOK_PASSWORD}
+#            - WEBHOOK_PAGE_TOKEN=${WEBHOOK_PAGE_TOKEN}
 
     frontend:
         build: 
