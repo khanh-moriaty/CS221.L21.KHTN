@@ -11,6 +11,8 @@ class POS:
             
         Output (list of str): a list with the same length as sentence, 
         where i-th element is the POS tagging of i-th word in the input sentence.
+        
+        Output: list of tuple (word, pos). Words can contains multiple instances ('hôm nay', 'bài hát', ...)
         '''
         pos = pos_tag(sentence)
         pos = [list(x) for x in pos]
@@ -23,7 +25,7 @@ class POS:
                 newpos.append(po[1])
 
         # Template: Predict "N" tag for all words.
-        return newpos
+        return pos
     
     def load_POS_model(self):
         self.model = ...

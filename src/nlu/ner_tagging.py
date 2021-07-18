@@ -1,3 +1,4 @@
+import itertools
 import pickle
  
 class NER:
@@ -13,7 +14,7 @@ class NER:
             'word[-3:]': word[-3:],
             'word[-2:]': word[-2:],
             'word.isupper()': word.isupper(),
-            'word.istitle()': word.istitle(),
+            # 'word.istitle()': word.istitle(),
             'word.isdigit()': word.isdigit(),
             'postag': postag,
             'postag[:2]': postag[:2],
@@ -29,12 +30,12 @@ class NER:
             postag1 = sent[i-1][1]
             features.update({
                 '-1:word.lower()': word1.lower(),
-                '-1:word.istitle()': word1.istitle(),
+                # '-1:word.istitle()': word1.istitle(),
                 '-1:word.isupper()': word1.isupper(),
                 '-1:postag': postag1,
                 '-1:postag[:2]': postag1[:2],
                 '-1:wordlength': len(word),
-                '-1:wordinitialcap': word[0].isupper(),
+                # '-1:wordinitialcap': word[0].isupper(),
                 '-1:wordmixedcap': len([x for x in word[1:] if x.isupper()])>0,
                 '-1:wordallcap': len([x for x in word if x.isupper()])==len(word),
             })
@@ -49,12 +50,12 @@ class NER:
             postag1 = sent[i+1][1]
             features.update({
                 '+1:word.lower()': word1.lower(),
-                '+1:word.istitle()': word1.istitle(),
+                # '+1:word.istitle()': word1.istitle(),
                 '+1:word.isupper()': word1.isupper(),
                 '+1:postag': postag1,
                 '+1:postag[:2]': postag1[:2],
                 '+1:wordlength': len(word),
-                '+1:wordinitialcap': word[0].isupper(),
+                # '+1:wordinitialcap': word[0].isupper(),
                 '+1:wordmixedcap': len([x for x in word[1:] if x.isupper()])>0,
                 '+1:wordallcap': len([x for x in word if x.isupper()])==len(word),
             })
@@ -78,18 +79,39 @@ class NER:
         
         Input:
             - sentence (str): the input sentence that needs to be processed.
-            - pos_tag (list of str): POS tagging for the input sentence.
+            - pos_tag (list of tuple): POS tagging for the input sentence.
             
         Output (list of str): a list with the same length as sentence, 
         where i-th element is the NER tagging of i-th word in the input sentence.
         '''
 
         data = []
-        sentence = sentence.split()
-        for i in range(len(sentence)):
-            data.append([sentence[i], pos_tag[i]])
+        # sentence = sentence.split()
+        # for i in range(len(sentence)):
+        #     data.append([sentence[i], pos_tag[i]])
+            
+        data = [[x[0].replace(' ', '_'), x[1]] for x in pos_tag]
+        
         X_test = [self.sent2features(data, embedding)]
-        y_pre = self.model.predict(X_test)
+        y_pre = self.model.predict(X_test)[0]
+        
+        # Split words ('vui_vẻ' => 'vui' + 'vẻ')
+        res = []
+        for x, y in zip(pos_tag, y_pre):
+            x = x[0].split()
+            word = [y]
+            # Substitue "B-X" with "I-X" for next words
+            if y[0] == 'B':
+                y = 'I' + y[1:]
+            # Add NER
+            if len(x) > 1:
+                for w in x[1:]:
+                    word.append(y)
+            res.append(word)
+        
+        # Merge all words into sentence
+        y_pre = list(itertools.chain(*res))
+            
         # Template: Predict "O" tag for all words.
         return y_pre
     
