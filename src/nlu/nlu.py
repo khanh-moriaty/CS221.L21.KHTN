@@ -77,9 +77,11 @@ class NLU:
                 mood += " " + str(input[k])
                 k += 1
 
-            if artist != "":
-                res = min(enumerate(self.artists), key=lambda x: editdistance.eval(artist, x[1]))
-                artist = str(res[1])
+            # if artist != "":
+            #     res = min(enumerate(self.artists), key=lambda x: editdistance.eval(artist, x[1]))
+            #     artist = str(res[1])
+            
+            artist = artist.lower()
             
             if mood != "":
                 res = min(self.moods.items(), key=lambda m: editdistance.eval(mood, min(m[1], key=lambda x: editdistance.eval(mood, x))))
@@ -204,3 +206,5 @@ class NLU:
             self.moods = json.load(f)
         self.list_songs_1 = pd.read_csv('/src/dataset/nhaccuatui_v2.csv', usecols=['singer','link','mood_binary'])
         self.list_songs_2 = pd.read_csv('/src/dataset/genre_song.csv', usecols=['artist','genre','link'])
+        self.list_songs_1['singer'] = self.list_songs_1['singer'].apply(lambda x:x.lower())
+        self.list_songs_2['artist'] = self.list_songs_2['artist'].apply(lambda x:x.lower())
