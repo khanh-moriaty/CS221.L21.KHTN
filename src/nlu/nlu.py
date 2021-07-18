@@ -62,7 +62,8 @@ class NLU:
             while k<len(ner_tag) and ner_tag[k]=="I-A":
                 artist += " " + str(input[k]).capitalize()
                 k += 1
-                
+               
+            k = 0            
             for i in range(len(ner_tag)):
                 if ner_tag[i]=="B-G":
                     genre += str(input[i])
