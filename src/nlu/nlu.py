@@ -6,7 +6,9 @@ from .intent_classifier import IntentClassifier
 import random
 import editdistance
 import json
+import re
 import pandas as pd
+
 def load_ans(path):
     ans = []
     with open(path ,encoding="utf-8-sig") as _file:
@@ -30,6 +32,7 @@ class NLU:
         '''
         
         # Template: Reponse 'You said "sentence"'.
+        sentence = re.sub('[.,\'";:\[\]\{\}\(\)]', ' ', sentence).replace('  ', ' ').strip()
         pos_tag = self.pos_model.predict_POS(sentence)
         ner_tag = self.ner_model.predict_NER(sentence, pos_tag, self.embedding_model)
         intent = self.intent_model.predict_intent(sentence, pos_tag, ner_tag, self.embedding_model)
