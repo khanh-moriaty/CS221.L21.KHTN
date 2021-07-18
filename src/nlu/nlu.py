@@ -102,9 +102,10 @@ class NLU:
                             ans = random.choice(self.ans_notfindsong)
                             link = ""
                         else:
-                            ans = random.choice(self.ans_findsong) + " " + link
+                            ans = random.choice(self.ans_findsong)
                     except:
                         ans = random.choice(self.ans_notfindsong)
+                        link = ""
                 else:
                     try:
                         link = self.list_songs_2["link"][random.choice(self.list_songs_2[self.list_songs_2["genre"].str.contains(genre)].index)]
@@ -116,15 +117,17 @@ class NLU:
                             ans = random.choice(self.ans_notfindsong)
                             link = ""
                         else:
-                            ans = random.choice(self.ans_findsong) + " " + link
+                            ans = random.choice(self.ans_findsong)
                     except:
                         ans = random.choice(self.ans_notfindsong)
+                        link = ""
             else:
                 if mood != "":
                     if artist != "":
                         try:
                             a = self.list_songs_1[self.list_songs_1["singer"].str.contains(artist)]
                             link = a["link"][random.choice(a[a["mood_binary"]==mood].index)]
+                            cout=0
                             while link==preLink and cout<10:
                                 link = a["link"][random.choice(a[a["mood_binary"]==mood].index)]
                                 cout+=1
@@ -132,12 +135,14 @@ class NLU:
                                 ans = random.choice(self.ans_notfindsong)
                                 link = ""
                             else:
-                                ans = random.choice(self.ans_findsong) + " " + link
+                                ans = random.choice(self.ans_findsong)
                         except:
                             ans = random.choice(self.ans_notfindsong)
+                            link = ""
                     else:
                         try:
                             link = self.list_songs_1["link"][random.choice(self.list_songs_1[self.list_songs_1["mood_binary"]==mood].index)]
+                            cout=0
                             while link==preLink and cout<10:
                                 link = self.list_songs_1["link"][random.choice(self.list_songs_1[self.list_songs_1["mood_binary"]==mood].index)]
                                 cout+=1
@@ -145,13 +150,15 @@ class NLU:
                                 ans = random.choice(self.ans_notfindsong)
                                 link = ""
                             else:
-                                ans = random.choice(self.ans_findsong) + " " + link
+                                ans = random.choice(self.ans_findsong)
                         except:
                             ans = random.choice(self.ans_notfindsong)
+                            link = ""
                 else:
                     if artist != "":
                         try:
                             link = self.list_songs_1["link"][random.choice(self.list_songs_1[self.list_songs_1["singer"].str.contains(artist)].index)]
+                            cout=0
                             while link==preLink and cout<10:
                                 link = self.list_songs_1["link"][random.choice(self.list_songs_1[self.list_songs_1["singer"].str.contains(artist)].index)]
                                 cout+=1
@@ -159,9 +166,10 @@ class NLU:
                                 ans = random.choice(self.ans_notfindsong)
                                 link = ""
                             else:
-                                ans = random.choice(self.ans_findsong) + " " + link
+                                ans = random.choice(self.ans_findsong)
                         except:
                             ans = random.choice(self.ans_notfindsong)
+                            link = ""
         return ans, link, ner_tag, pos_tag, intent, artist, mood, genre
         
     def load_model(self):
