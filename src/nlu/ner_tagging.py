@@ -18,7 +18,7 @@ class NER:
             'word.isdigit()': word.isdigit(),
             'postag': postag,
             'postag[:2]': postag[:2],
-            'wordinitialcap': word[0].isupper(),
+#             'wordinitialcap': word[0].isupper(),
             'wordmixedcap': len([x for x in word[1:] if x.isupper()])>0,
             'wordallcap': len([x for x in word if x.isupper()])==len(word),
             'distfromsentbegin': i
