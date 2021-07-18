@@ -123,7 +123,7 @@ def frontend_message():
         }
         db.data.insert_one(response)
         del response['_id']
-        del response['error']
+        # del response['error']
         return response
 
 @app.route("/webhook/message", methods=["GET", "POST"])
