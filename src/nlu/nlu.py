@@ -1,3 +1,4 @@
+
 from nlu.embedding import Embedding
 from .pos_tagging import POS
 from .ner_tagging import NER
@@ -22,7 +23,7 @@ class NLU:
         Generate a response for chatbot based on a target sentence and a context.
         
         Input:
-            - context (tuple): previous values of artist, mood, and genre. Will be empty string ("", "", "") if none available.
+            - context (list of str): a list of previous sentences in our conversation.
             - sentence (str): the sentence/query that user sent to chatbot.
         
         Output (str): a proper response to the user's sentence.
@@ -33,14 +34,14 @@ class NLU:
         ner_tag = self.ner_model.predict_NER(sentence, pos_tag, self.embedding_model)[0]
         intent = self.intent_model.predict_intent(sentence, pos_tag, ner_tag, self.embedding_model)
         input = sentence.split()
-        artist = genre = mood = link = ans = ''
+        artist = genre = mood = link = ans = preLink = ''
         is_all_O = 1
         for i in ner_tag:
             if i!='O':
                 is_all_O = 0
         if intent==0 and is_all_O == 1:
             intent = 4
-        if intent==1 and context==("","",""):
+        if intent==1 and context[:3]==("","",""):
             intent = 4       
         if intent==3:
             ans = random.choice(self.ans_greet)
@@ -85,46 +86,90 @@ class NLU:
                 res = min(self.genres.items(), key=lambda g: editdistance.eval(genre, min(g[1], key=lambda x: editdistance.eval(genre, x))))
                 genre = str(res[0])
 
-            if intent==1 and context!=("","",""):
-                artist, mood, genre, link = context
+            if intent==1 and context[:3]!=("","",""):
+                artist, mood, genre, preLink = context
 
-            link = ""
             if genre != "":
                 if artist != "":
                     try:
                         a = self.list_songs_2[self.list_songs_2["artist"].str.contains(artist)]
                         link = a["link"][random.choice(a[a["genre"].str.contains(genre)].index)]
-                        ans = random.choice(self.ans_findsong)
+                        cout=0
+                        while link==preLink and cout<10:
+                            link = a["link"][random.choice(a[a["genre"].str.contains(genre)].index)]
+                            cout+=1
+                        if cout==10:
+                            ans = random.choice(self.ans_notfindsong)
+                            link = ""
+                        else:
+                            ans = random.choice(self.ans_findsong)
                     except:
                         ans = random.choice(self.ans_notfindsong)
+                        link = ""
                 else:
                     try:
                         link = self.list_songs_2["link"][random.choice(self.list_songs_2[self.list_songs_2["genre"].str.contains(genre)].index)]
-                        ans = random.choice(self.ans_findsong)
+                        cout=0
+                        while link==preLink and cout<10:
+                            link = self.list_songs_2["link"][random.choice(self.list_songs_2[self.list_songs_2["genre"].str.contains(genre)].index)]
+                            cout+=1
+                        if cout==10:
+                            ans = random.choice(self.ans_notfindsong)
+                            link = ""
+                        else:
+                            ans = random.choice(self.ans_findsong)
                     except:
                         ans = random.choice(self.ans_notfindsong)
+                        link = ""
             else:
                 if mood != "":
                     if artist != "":
                         try:
                             a = self.list_songs_1[self.list_songs_1["singer"].str.contains(artist)]
                             link = a["link"][random.choice(a[a["mood_binary"]==mood].index)]
-                            ans = random.choice(self.ans_findsong)
+                            cout=0
+                            while link==preLink and cout<10:
+                                link = a["link"][random.choice(a[a["mood_binary"]==mood].index)]
+                                cout+=1
+                            if cout==10:
+                                ans = random.choice(self.ans_notfindsong)
+                                link = ""
+                            else:
+                                ans = random.choice(self.ans_findsong)
                         except:
                             ans = random.choice(self.ans_notfindsong)
+                            link = ""
                     else:
                         try:
                             link = self.list_songs_1["link"][random.choice(self.list_songs_1[self.list_songs_1["mood_binary"]==mood].index)]
-                            ans = random.choice(self.ans_findsong)
+                            cout=0
+                            while link==preLink and cout<10:
+                                link = self.list_songs_1["link"][random.choice(self.list_songs_1[self.list_songs_1["mood_binary"]==mood].index)]
+                                cout+=1
+                            if cout==10:
+                                ans = random.choice(self.ans_notfindsong)
+                                link = ""
+                            else:
+                                ans = random.choice(self.ans_findsong)
                         except:
                             ans = random.choice(self.ans_notfindsong)
+                            link = ""
                 else:
                     if artist != "":
                         try:
                             link = self.list_songs_1["link"][random.choice(self.list_songs_1[self.list_songs_1["singer"].str.contains(artist)].index)]
-                            ans = random.choice(self.ans_findsong)
+                            cout=0
+                            while link==preLink and cout<10:
+                                link = self.list_songs_1["link"][random.choice(self.list_songs_1[self.list_songs_1["singer"].str.contains(artist)].index)]
+                                cout+=1
+                            if cout==10:
+                                ans = random.choice(self.ans_notfindsong)
+                                link = ""
+                            else:
+                                ans = random.choice(self.ans_findsong)
                         except:
                             ans = random.choice(self.ans_notfindsong)
+                            link = ""
         return ans, link, ner_tag, pos_tag, intent, artist, mood, genre
         
     def load_model(self):
