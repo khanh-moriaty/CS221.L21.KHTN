@@ -70,7 +70,7 @@ class NER:
         return [self.word2features(sent, i, embedding) for i in range(len(sent))]
 
     def load_NER_model(self):
-        self.model = pickle.load(open('/src/nlu/model/NER_model/1000l1u.sav','rb'))
+        self.model = pickle.load(open('/src/nlu/model/NER_model/1000l_1u.sav','rb'))
 
     def predict_NER(self, sentence, pos_tag, embedding):
         '''
