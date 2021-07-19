@@ -7,3 +7,5 @@ Hello
 Êy yo
 Alo
 alo ?
+xin chào
+helo
