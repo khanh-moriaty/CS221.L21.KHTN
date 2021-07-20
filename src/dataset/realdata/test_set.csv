@@ -1,4 +1,12 @@
 word,pos,tag
+<,N,O
+<,V,O
+<,N,O
+<,V,O
+<,N,O
+<,V,O
+<,N,O
+HEAD,Np,O
 cho,E,O
 tao,P,O
 1,M,O
@@ -236,9 +244,7 @@ Sơn,Np,B-A
 Tùng,Np,I-A
 bài,N,O
 của,E,O
-[,N,O
-blackpink,N,O
-],CH,O
+blackpink,M,B-A
 Lofi,Np,B-G
 Nhạc,N,O
 vui,A,B-M
@@ -929,7 +935,7 @@ blackpink,M,B-A
 Nhạc,N,O
 KPOP,Np,B-G
 Nhạc,N,O
-thiếu_nhi,M,I-A
+thiếu_nhi,M,I-G
 bài,N,O
 của,E,O
 sơn,N,B-A
@@ -976,3 +982,14 @@ của,E,O
 Sơn,Np,B-A
 Tùng,Np,I-A
 M-tp,Np,I-A
+bài,N,O
+gì,P,O
+hay,C,O
+hay,C,O
+coi,V,O
+cho,E,O
+bài,N,O
+gì,P,O
+hay,C,O
+hay,C,O
+coi,V,O
