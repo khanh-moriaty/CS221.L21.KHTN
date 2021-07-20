@@ -45,7 +45,6 @@ clear;
 Bạn tìm nhạc bằng cách nào ?
 nhạc nhạc h0m^ nAy t0j^ 3u0n^`
 đời là thế thôi nhạc
-cho bài gì hay hay coi
 nhạc đời là thế thôi
 nhạc đời là thế thôi
 Haiz
@@ -171,7 +170,6 @@ nhạc nhạc h0m^ nAy t0j^ 3u0n^`
 ?
 nhạc cụ
 Nhạc mưa
-bài gì hay hay coi
 !pip
 !turnoff
 xin bản nhạc để nghe chơi của ca sĩmtp
